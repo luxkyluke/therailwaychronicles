@@ -59,7 +59,7 @@ var pays = [
 	
 
 	$("nav").load(TEMPLATE_PATH+'nav.html', function()	{	
-		$('.burger-menu').on('click', function(e) {
+		$(".burger-menu").on('click', function(e) {
 			e.preventDefault();
 		  	$(this).toggleClass("burger-menu--opened");
 		  	$(this).toggleClass("burger-menu--closed");	
@@ -92,8 +92,10 @@ var pays = [
 		    console.log("bacic load "+page+" OK");
 		    window.history.pushState({"page":page, "pageTitle":title},"", "");
 	    	$(document).scrollTop(0);
-	    	loadImgsBackGrounds(page);
-	    	_callback();
+	    	loadImgsBackGrounds(page, function(){
+	    		_callback();
+	    	});
+	    	
 	    });
 	   	if(refresh !== undefined)
 	   		return false;
@@ -118,15 +120,13 @@ function updateCurrent(){
 }
 
 function affArticle(name){
+	$(".se-pre-con").fadeIn(0);
 	switch(name){
 		case "sacha":
-			load_template_page("sacha", "Le Voyage de Sacha", function()
-			{
+			load_template_page("sacha", "Le Voyage de Sacha", function(){
 				nav_current = '#nav_sacha';
 				updateCurrent();
-				// CA MARCHE PO
-			    // var offset2 = $('#chapter2 .chaptertitle').offset().top;
-			    // $("#dot2").css("top", offset2);
+				$(".se-pre-con").fadeOut("slow");
 			})
 			break;
 
@@ -165,15 +165,18 @@ function affArticle(name){
 			load_template_page("index", "The Railway Chronicales", function(){
 				nav_current = '#nav_index';
 				updateCurrent();
+				$(".se-pre-con").fadeOut("slow");
 			});
 			break;
 
 		case "experiences":
 			load_template_page("experiences", "Experiences", function(){
 				experienceAnim();
-				clickCatExpAnim($("#cat_decouverte a li").first(), false);
+				clickCatExpAnim($("#cat_decouverte a li").first(), false);				
 				nav_current = '#nav_experiences';
 				updateCurrent();
+				$(".se-pre-con").fadeOut("slow");
+
 			});
 			break;
 
@@ -181,8 +184,12 @@ function affArticle(name){
 			load_template_page("destinations", "Destinations", function(){
 				nav_current = '#nav_destinations';
 				updateCurrent();
-				initMap();
-				destinationsLoad()
+				initMap(function(){
+					destinationsLoad(function(){
+						$(".se-pre-con").fadeOut("slow");
+					});
+				});
+				
 			});
 			break;
 
@@ -195,6 +202,7 @@ function affArticle(name){
 				$(nav_current).removeClass('current');
 				nav_current='#nav_about';
 				updateCurrent();
+				$(".se-pre-con").fadeOut("slow");
 			}
 			else{
 				load_template_page("index", "The Railway Chronicales", function(){
@@ -203,6 +211,7 @@ function affArticle(name){
 					$('html, body').animate({
 						scrollTop: $("#ourteam").offset().top-50
 					}, 2000, false);
+					$(".se-pre-con").fadeOut("slow");
 				});
 			}
 			break;
@@ -216,6 +225,7 @@ function affArticle(name){
 				$(nav_current).removeClass('current');
 				nav_current= '#nav_contact';
 				updateCurrent();
+				$(".se-pre-con").fadeOut("slow");
 			}
 			else{
 				load_template_page("index", "The Railway Chronicales", function(){
@@ -224,6 +234,7 @@ function affArticle(name){
 					$('html, body').animate({
 						scrollTop: $("#contactus").offset().top-50
 					}, 1500);
+					$(".se-pre-con").fadeOut("slow");
 				}, false);
 			}
 
@@ -239,30 +250,45 @@ function affArticle(name){
 
 
 
-function loadImgsBackGrounds(page){
+function loadImgsBackGrounds(page, _callback){
    	switch(page){
 		case "article":
 			//document.getElementById("header").style.backgroundImage = "url('img/articles/"+$("#page").data("id")+"/background.jpg')";
-			loadBG();
+			loadBG(_callback);
 			break;
 
 		default :
-			loadBG();
+			loadBG(_callback);
 			break;
 	}
 }
 
-function loadBG(){
-	$(".bg").each(function(){	
+function loadBG(_callback){
+	var cpt =0, i=0;
+	var imgs = new Array();
+	//var nbImg = $(".bg").size();
+	$(".bg").each(function(){
+		imgs[i] = new Image();
 		var src = $(this).data('src');
+		imgs[i].onload = function(){
+			console.log("img loaded");
+			cpt++;
+			if(cpt == i){
+				console.log("img DONE");
+				_callback();
+			}	
+		}
 		if (src != undefined){
 			if($(this).hasClass('article_header')){
 				$('#header').css('background-image', 'url('+src+')');
 			}
 			else
 				$(this).css('background-image', 'url('+src+')');
+			imgs[i].src = src;
+			i++;
 		}
-	})
+	});
+	_callback();
 }
 
 function clickCatExpAnim(current, scroll){
@@ -314,7 +340,7 @@ function scrollToPage(){
 	}
 }
 
-function destinationsLoad(){
+function destinationsLoad(_callback){
 	//initialisation des indicateurs de nombre 
 	//le nb d'exp par région
 	var nbExp = $('.article_bloc').size();
@@ -428,8 +454,8 @@ function destinationsLoad(){
 		}	
 		scrollToPage();
 		return false;
-
 	});
+	_callback();
 }
 
 function resetSelectedCountry(selector){
@@ -485,4 +511,6 @@ function makeResponsiveCarousel(){
   $("#page").css('top', delta);
 
   $("#articletitle").css("top", imgH/2);
+  $(".se-pre-con").fadeOut("slow");
 }
+

@@ -12,7 +12,7 @@ function getJSON(url){
     return json;
 }
 
-function initMap(){
+function initMap(_callback){
   if(document.getElementById('destinations_map') != undefined){
 
     var mapStyle = getJSON("scripts/json/map_style.json");
@@ -68,8 +68,6 @@ function initMap(){
 
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
-
-   
-    
+    _callback();
   }
 }
