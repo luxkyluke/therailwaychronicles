@@ -1,0 +1,1111 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bu",
+				"burger_menu"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"de",
+				"text-decoration"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"project",
+				"projects-cover-mixin"
+			],
+			[
+				"a",
+				"art"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"WI",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"Ma",
+				"Math.PI	Math"
+			],
+			[
+				"inner",
+				"window.innerHeight	Window"
+			],
+			[
+				"publi",
+				"publications"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"res",
+				"request"
+			],
+			[
+				"public",
+				"publication"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"FOR",
+				"FOREIGN"
+			],
+			[
+				"id",
+				"id_conversation"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 3477,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/article.html",
+			"settings":
+			{
+				"buffer_size": 4949,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/experiences.html",
+			"settings":
+			{
+				"buffer_size": 13204,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/header.html",
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/nav.html",
+			"settings":
+			{
+				"buffer_size": 1158,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/maps.js",
+			"settings":
+			{
+				"buffer_size": 1875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 12584,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/font.css",
+			"settings":
+			{
+				"buffer_size": 431,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/skeleton.css",
+			"settings":
+			{
+				"buffer_size": 7346,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/article.css",
+			"settings":
+			{
+				"buffer_size": 3486,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 283.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 549.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/wamp64/www/TripOnRail",
+		"/D/wamp64/www/TripOnRail/css",
+		"/D/wamp64/www/TripOnRail/experiences",
+		"/D/wamp64/www/TripOnRail/scripts",
+		"/D/wamp64/www/TripOnRail/scripts/json",
+		"/D/wamp64/www/TripOnRail/templates"
+	],
+	"file_history":
+	[
+		"/D/wamp64/www/TripOnRail/css/experiences.css",
+		"/D/wamp64/www/TripOnRail/scripts/script.js",
+		"/D/wamp64/www/TripOnRail/scripts/load.js",
+		"/D/wamp64/www/TripOnRail/css/article.css",
+		"/D/wamp64/www/TripOnRail/css/parallax.css",
+		"/D/wamp64/www/TripOnRail/css/destinations.css",
+		"/D/wamp64/www/TripOnRail/css/owl.carousel.css",
+		"/D/wamp64/www/TripOnRail/css/contactform.css",
+		"/D/wamp64/www/TripOnRail/templates/White_Pass.html",
+		"/D/wamp64/www/TripOnRail/templates/Hiram_Bingham.html",
+		"/D/wamp64/www/TripOnRail/templates/El_Chepe.html",
+		"/D/wamp64/www/TripOnRail/templates/Petite_Ceinture.html",
+		"/D/wamp64/www/TripOnRail/templates/Blue_Train.html",
+		"/D/wamp64/www/TripOnRailCopie/.gitattributes",
+		"/D/wamp64/www/TripOnRailCopie/css/style.css",
+		"/D/wamp64/www/TripOnRail/templates/article.html",
+		"/D/wamp64/www/TripOnRail/templates/sacha.html",
+		"/D/wamp64/www/TripOnRail/index.html",
+		"/D/wamp64/www/TripOnRail/templates/destinations.html",
+		"/D/wamp64/www/TripOnRail/css/levoyagedesacha.css",
+		"/D/wamp64/www/TripOnRail/templates/experiences.html",
+		"/D/wamp64/www/TripOnRail/templates/header.html",
+		"/D/wamp64/www/TripOnRail/templates/nav.html",
+		"/D/wamp64/www/TripOnRail/scripts/owl.carousel.js",
+		"/D/wamp64/www/TripOnRail/templates/index.html",
+		"/D/wamp64/www/TripOnRail/scripts/root.js",
+		"/D/wamp64/www/TripOnRail/fonts/arenq.otf",
+		"/D/wamp64/www/TripOnRail/css/style.css",
+		"/D/wamp64/www/TripOnRail/scripts/json/map_style.json",
+		"/D/wamp64/www/TripOnRail/scripts/json/map_locations.json",
+		"/D/wamp64/www/TripOnRail/scripts/maps.js",
+		"/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/wamp64/www/TripOnRail/css/skeleton.css",
+		"/D/wamp64/www/TripOnRail/css/destination.css",
+		"/D/wamp64/www/TripOnRail/templates/destination.html",
+		"/D/wamp64/www/TripOnRail/css/font.css",
+		"/D/wamp64/www/TripOnRail/scripts/contactform.js",
+		"/D/wamp64/www/TripOnRail/templates/footer.html",
+		"/D/wamp64/logs/access.log",
+		"/D/Documents/sitePerso/templates/pages/projects/art.html",
+		"/D/Documents/sitePerso/index.html",
+		"/D/Documents/sitePerso/data/projects.json",
+		"/D/Documents/sitePerso/sass/main.scss",
+		"/D/Documents/sitePerso/js/scripts.js",
+		"/D/Documents/sitePerso/sass/layout/grid.scss",
+		"/D/Documents/sitePerso/sass/components/_menu.scss",
+		"/D/Téléchargements/bp.txt",
+		"/D/Documents/sitePerso/sass/_grid.scss",
+		"/D/Documents/sitePerso/indexExemple.html",
+		"/D/Documents/web/site/index.html",
+		"/D/Documents/web/site/sass/style.css",
+		"/D/Documents/web/site/sass/main.scss",
+		"/D/Documents/web/site/sass/_grid.scss",
+		"/D/Documents/web/site/templates/pages/WORKS.html",
+		"/D/Téléchargements/gridpak-2/demo/index.html",
+		"/D/Documents/web/site/pageExemple.html",
+		"/D/Téléchargements/gridpak-2/demo/gridpak.demo.scss",
+		"/D/Documents/web/site/style.css",
+		"/D/Téléchargements/gridpak/demo/gridpak.demo.scss",
+		"/D/Téléchargements/gridpak/gridpak.js",
+		"/D/Téléchargements/gridpak/gridpak.css",
+		"/D/Téléchargements/gridpak/demo/index.html",
+		"/D/Téléchargements/gridpak/demo/gridpak.demo.css",
+		"/D/Documents/web/site/scripts.js",
+		"/D/Documents/web/site/templates/pages/about.html",
+		"/D/Documents/web/site/templates/pages/home.html",
+		"/D/Video/robot/Mr.Robot - S0.srt",
+		"/D/Video/robot/Mr.Robot - S01E10 FINAL [1080p] WEB-DL x265 HEVC [NOEX].mks",
+		"/D/Documents/web/site/three.js-master/examples/js/renderers/CanvasRenderer.js",
+		"/D/Documents/web/site/three.js-master/build/three.min.js",
+		"/D/Documents/web/site/three.js-master/src/Three.js",
+		"/D/Documents/web/canvas/scripts.js",
+		"/D/Documents/web/canvas/index.html",
+		"/D/Documents/web/site/index.webGlhtml.html",
+		"/D/Documents/web/index.html",
+		"/D/wamp64/www/semaineWeb/index.php",
+		"/D/wamp64/www/ProjetsPerso/Less/script.js",
+		"/D/Documents/C/imagimp/Makefile",
+		"/D/wamp64/www/ProjetsPerso/Less/index.php",
+		"/D/wamp64/www/ProjetsPerso/Less/styles.less",
+		"/D/Documents/C/imagimp/src/Calque.c",
+		"/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/wamp64/www/ProjetsPerso/Less/less.js",
+		"/D/wamp64/www/api/model/Publication.php",
+		"/D/wamp64/www/api/controller/publicationController.php",
+		"/D/wamp64/www/api/model/Conversation.php",
+		"/D/wamp64/www/api/controller/conversationController.php",
+		"/D/wamp64/www/api/model/Malaise.php",
+		"/D/wamp64/www/api/model/Like.php",
+		"/D/wamp64/www/api/model/routing.php",
+		"/D/wamp64/www/api/model/model.php",
+		"/D/wamp64/www/api/model/User.php",
+		"/D/wamp64/www/api/controller/messageController.php",
+		"/D/wamp64/www/api/controller/testController.php",
+		"/D/wamp64/www/api/model/test.php",
+		"/D/wamp64/www/pink_chat_web_2_0.sql",
+		"/C/Users/Antoine/Desktop/tmpPublication.php",
+		"/D/wamp64/www/api/model/Tag.php",
+		"/D/wamp64/www/api/controller/userController.php",
+		"/D/wamp64/www/api/model/routes.json",
+		"/D/wamp64/www/test/js/main.js",
+		"/D/wamp64/www/api/model/database.php",
+		"/D/Téléchargements/PPM.txt",
+		"/D/Documents/Synthese_image/Hovercraft/levels/level2.txt",
+		"/D/Téléchargements/miniGimp-IMAC-JS-master/Makefile",
+		"/D/Téléchargements/Pixel.txt",
+		"/D/Documents/Synthese_image/Hovercraft/levels/level1.txt",
+		"/D/Téléchargements/01_09_02_testbmp.c/01_09_02_bmp.c",
+		"/D/Téléchargements/01_09_02_testbmp.c/01_09_02_bmp.h",
+		"/D/Téléchargements/01_09_02_testbmp.c/01_09_02_testbmp.c",
+		"/D/Documents/C/imagimp/images/Sylvan_Lake - Copie.txt",
+		"/D/Téléchargements/Pixel (1).txt",
+		"/D/wamp64/logs/mysql.log",
+		"/C/wamp64/bin/apache/apache2.4.17/conf/httpd.conf",
+		"/C/wamp64/logs/apache_error.log",
+		"/C/wamp64/logs/mysql.log",
+		"/D/Téléchargements/miniGimp-IMAC-JS-master/CMakeLists.txt",
+		"/D/Téléchargements/rel_arte/changelog.txt",
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Color3f.h",
+		"/D/Téléchargements/Raytracer/Raytracer/src/sdl_tools.c",
+		"/D/Téléchargements/Raytracer/Raytracer/src/main.c",
+		"/D/Téléchargements/Level - Copie.txt",
+		"/D/Documents/C/projet_c_anfray.c",
+		"/D/Téléchargements/Level.txt",
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Cube.h",
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Point3D.h",
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Sphere.h",
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Vector3D.h"
+	],
+	"find":
+	{
+		"height": 86.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"<project>",
+			"",
+			"makeResponsiveCaroussel()",
+			"",
+			"bmenu",
+			"",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"video",
+			".food_conteneur--left",
+			".nine.columns",
+			"nine columns",
+			"page",
+			"nav #burger_menu #menu",
+			"nav #burger_menu #menu.burger",
+			"a .middle",
+			"0",
+			"#title_logo",
+			".title_logo",
+			"title_logo",
+			"#title_logo",
+			"title_logo",
+			"#title_logo",
+			"carousel",
+			"divers.png",
+			"carousel",
+			"loadCaroussel",
+			"makeResponsiveCaroussel",
+			"checkBackgroundArticle",
+			"actuality",
+			".one-half",
+			"headerc",
+			"box_menu",
+			"sacha",
+			"affArti",
+			"link",
+			"current",
+			"selected",
+			"#bmenu",
+			"Bmenu",
+			"true",
+			"bg",
+			"item",
+			"3000px",
+			" items:6,",
+			"1080px",
+			"1920px",
+			"loadImgsBackGrounds",
+			"loadBG",
+			"loadCaroussel",
+			"header",
+			"soupe",
+			"loadbg",
+			"setup",
+			"a .middle h2 ",
+			"800",
+			"conteneur_categories li",
+			"hover",
+			"920",
+			"<span class='count'>",
+			"bg",
+			"levoyagedesacha",
+			"loadImgsBackGrounds",
+			";\n",
+			"		\n",
+			"headerc",
+			"top",
+			"exp",
+			"clickCatExpAnim",
+			"#menu",
+			"menu",
+			"click",
+			"affa",
+			"console",
+			"page",
+			"#b9b9b9",
+			"ParseInt",
+			"markerClickEvent",
+			";\n",
+			"destination",
+			"layoutStaggerAppear",
+			"id_region",
+			"continents",
+			"continent",
+			"h2 span.count",
+			"bg",
+			"conteneur_categories",
+			"bg",
+			" '../",
+			"country",
+			"administrative.country",
+			"alert",
+			"main_logo_cat",
+			"main_logo_at",
+			"src",
+			"0",
+			"nav_current",
+			"alert",
+			"click",
+			"nav",
+			"exp_1",
+			".article_conteneur",
+			"article_conteneur",
+			"return false;",
+			"return",
+			"aff",
+			"loadImgsBackGrounds",
+			"logo",
+			"middle",
+			"overlay",
+			"bg",
+			"hover",
+			"h2",
+			"border	",
+			"border",
+			"menu",
+			"page",
+			"/img/experiences/decouverte.jpg",
+			"img/experiences/background",
+			"img/experiences/decouverte.jpg",
+			"menu",
+			"decouverte.jpg",
+			"decourverte.jpg",
+			"    color: #1EAEDB;",
+			"a",
+			"* ",
+			"* {",
+			"*",
+			"padding",
+			"\"){\n",
+			"js-scrollTo",
+			"twothi",
+			"SLAOEP",
+			"c60000",
+			"montserrat",
+			"montserrat\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".title_logo",
+			"insolite.png",
+			"makeResponsiveCarousel",
+			"makeResponsiveCaroussel",
+			"sacha",
+			"parseInt",
+			"id_continent",
+			"#article_conteneur",
+			"Monsterrat-Hairline",
+			"Monsterrat-Light",
+			"Monsterrat-Thin",
+			"Monsterrat-Ultralight",
+			"Monsterrat-R",
+			"Monsterra-R",
+			"Monsterra-Ultralight",
+			"Monsterra-Light",
+			"malaise",
+			"id_user"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/article.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4769,
+								4769
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2653.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/experiences.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "scripts/maps.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2706,
+								2706
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "css/font.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/skeleton.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6861,
+								6861
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/article.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1920,
+								1920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2461.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 80.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.523156611822,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ske",
+				"css\\skeleton.css"
+			],
+			[
+				"st",
+				"css\\style.css"
+			],
+			[
+				"art",
+				"css\\article.css"
+			],
+			[
+				"pa",
+				"css\\parallax.css"
+			],
+			[
+				"sty",
+				"css\\style.css"
+			],
+			[
+				"na",
+				"templates\\nav.html"
+			],
+			[
+				"",
+				"templates\\header.html"
+			],
+			[
+				"font",
+				"css\\font.css"
+			],
+			[
+				"des",
+				"css\\destinations.css"
+			],
+			[
+				"peti",
+				"templates\\Petite_Ceinture.html"
+			],
+			[
+				"scri",
+				"scripts\\script.js"
+			],
+			[
+				"conta",
+				"TripOnRail\\css\\contactform.css"
+			],
+			[
+				"scr",
+				"TripOnRail\\scripts\\script.js"
+			],
+			[
+				"index",
+				"templates\\index.html"
+			],
+			[
+				"sa",
+				"templates\\sacha.html"
+			],
+			[
+				"he",
+				"templates\\header.html"
+			],
+			[
+				"load",
+				"scripts\\load.js"
+			],
+			[
+				"lo",
+				"scripts\\load.js"
+			],
+			[
+				"hea",
+				"templates\\header.html"
+			],
+			[
+				"inde",
+				"templates\\index.html"
+			],
+			[
+				"nav",
+				"templates\\nav.html"
+			],
+			[
+				"articl",
+				"css\\article.css"
+			],
+			[
+				"loa",
+				"scripts\\load.js"
+			],
+			[
+				"o",
+				"fonts\\arenq.otf"
+			],
+			[
+				"sk",
+				"css\\skeleton.css"
+			],
+			[
+				"here",
+				"templates\\header.html"
+			],
+			[
+				"grid",
+				"sass\\layout\\grid.scss"
+			],
+			[
+				"s",
+				"js\\scripts.js"
+			],
+			[
+				"user",
+				"D:\\wamp64\\www\\api\\controller\\userController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

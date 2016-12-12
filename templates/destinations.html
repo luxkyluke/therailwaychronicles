@@ -1,0 +1,304 @@
+		<header class="contentHeader">
+			<div id="destinations_map"></div>
+		</header>
+		
+		<div id="page" class="destinations">	
+			<div class="regions">
+		        <div class="container">
+		            <div class="label">Sélectionnez votre region</div>
+		            <div class="items">
+		            	<!-- ne pas oublié l'espace après le label !!! super important !!! -->
+		                <a id="continent_0" data-id="0" href="#" class="id_continent selected">Tout <span class="count">38</span></a>
+                        <a id="continent_1" data-id="1" class="id_continent" href="#">Europe <span class="count">10</span></a>
+                        <a id="continent_2" data-id="2" class="id_continent" href="#">Asie <span class="count">1</span></a>
+                        <a id="continent_3" data-id="3" class="id_continent" href="#">Océanie <span class="count">1</span></a>
+                        <a id="continent_4" data-id="4" class="id_continent" href="#">Amérique <span class="count">3</span></a>
+		            </div>
+		        </div>
+		    </div>
+			<div class="inner">
+		        <div class="container">
+		            <aside class="layoutStaggerAppear">
+		                <div class="block continents">
+		                    <div class="inject">
+		                    <!-- PROBLEME AU CLICK !!!! -->
+		                        <h2>
+									<a href="#"
+									data-id="0" data-cont="0" class="selected">
+		                                <span class="count">38</span>
+		                            </a>
+		                        </h2>
+		                        <ul>
+		                        	<!-- ne pas oublié l'espace après le label !!! super important !!! -->
+		                            <li id="pays_1" class="visible"><a href="#"  data-id="1">France <span class="count">0</span></a></li>
+		                            <li id="pays_3" class="visible"><a href="#"  data-id="3">Russie <span class="count">0</span></a></li>
+		                            <li id="pays_2" class="visible"><a href="#"  data-id="2">Italie <span class="count">0</span></a></li>
+		                            <li id="pays_4" class="visible"><a href="#"  data-id="4">Australie <span class="count">0</span></a></li>
+		                            <li id="pays_5" class="visible"><a href="#"  data-id="5">Mexique <span class="count">0</span></a></li>
+		                            <li id="pays_6" class="visible"><a href="#"  data-id="6">South Africa <span class="count">0</span></a></li>
+		                            <li id="pays_7" class="visible"><a href="#"  data-id="7">Pérou <span class="count">0</span></a></li>
+		                            <li id="pays_8" class="visible"><a href="#"  data-id="8">Alaska <span class="count">0</span></a></li>
+		                            <li id="pays_9" class="visible"><a href="#"  data-id="9">Japon <span class="count">0</span></a></li>
+		                            <li id="pays_10" class="visible"><a href="#"  data-id="10">Inde <span class="count">0</span></a></li>
+		                            <li id="pays_11" class="visible"><a href="#"  data-id="11">Portugal <span class="count">0</span></a></li>
+		                            <li id="pays_12" class="visible"><a href="#"  data-id="12">Nevada <span class="count">0</span></a></li>
+		                            <li id="pays_13" class="visible"><a href="#"  data-id="13">Royaume-Uni <span class="count">0</span></a></li>
+		                           	<li id="pays_14" class="visible"><a href="#"  data-id="14">Californie <span class="count">0</span></a></li>
+		                            <li id="pays_15" class="visible"><a href="#"  data-id="15">Tunisie <span class="count">0</span></a></li>
+		                            <li id="pays_16" class="visible"><a href="#"  data-id="16">Suisse <span class="count">0</span></a></li>
+		                            <li id="pays_17" class="visible"><a href="#"  data-id="17">Bolivie <span class="count">0</span></a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </aside>
+		            <div class="sidecontent">
+		                <h1 id="region_title">Toutes <span class="count">2 Expériences</span></h1>
+		                <div id="article_conteneur">
+		                    <a class="article_bloc continent_3 country_4" data-pays='4' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/kuranda_scenic_railway.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/desert_white.png" >
+									<h2>KARUNDA SCENIC RAILWAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_3 country_4" data-pays='4' href="javascript:" onclick="affArticle('article')">
+								<!-- <img src="img/experiences/decouverte.jpg" class="loadImageHide"> -->
+								<div class="bg" data-src="img/experiences/the_ghan.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/desert_white.png" >
+									<h2>THE GHAN</h2>
+								</div>
+							</a>             
+							<a class="article_bloc continent_4 country_5" data-pays='5' href="javascript:" onclick="affArticle('El_Chepe')">
+								<div class="bg" data-src="img/experiences/el_chepe.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>EL CHEPE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_6" data-pays='6' href="javascript:" onclick="affArticle('Blue_Train')">
+								<div class="bg" data-src="img/experiences/blue_train.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>BLUE TRAIN</h2>
+								</div>
+							</a> 
+							<a class="article_bloc continent_4 country_7" data-pays='7' href="javascript:" onclick="affArticle('Hiram_Bingham')">
+								<div class="bg" data-src="img/experiences/hiram_bingham.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>HIRAM BINGHAM</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_1" data-pays='1' href="javascript:" onclick="affArticle('Petite_Ceinture')">
+								<div class="bg" data-src="img/experiences/petite_ceinture.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>PETITE CEINTURE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_8" data-pays='8' href="javascript:" onclick="affArticle('White_Pass')">
+								<div class="bg" data-src="img/experiences/white_pass.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>WHITE PASS AND YUKON ROUTE</h2>
+								</div>
+							</a> 
+							<a class="article_bloc continent_1 country_3" data-pays='3' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/oriental_express.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>EASTERN AND ORIENTAL EXPRESS</h2>
+								</div>
+							</a> 
+							<a class="article_bloc continent_1 country_2" data-pays='2' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/venice_simplon_orient_express.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/mer_white.png" >
+									<h2>VENICE SIMPLON ORIENT EXPRESS</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_2 country_9" data-pays='9' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/shinkansen.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/urbain_white.png" >
+									<h2>SHINKANSEN</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_3 country_4" data-pays='4' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/katoomba_scenic_railway.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>KATOOMBA SCENIC RAILWAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_2 country_10" data-pays='10' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/Shimla_Kalka.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>SHIMLA - KALKA</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_11" data-pays='11' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/funiculaire_lisbonne.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/urbain_white.png" >
+									<h2>TRAMWAY DE LISBONNE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_2 country_3" data-pays='3' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/arbatskaya_metro_station.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>METRO ARBATSKAYA</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_2" data-pays='2' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/station_toledo.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>STATION TOLEDO</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_12" data-pays='12' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/eureka_palisade.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>EUREKA AND PALISAD RAILWAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_2 country_3" data-pays='3' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/metro_russie.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>METRO RUSSIE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/jacobite.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>JACOBITE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/cremaillere_mont_snowdon.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>CREMAILLERE MONT SNOWDON</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/riviera_line.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/mer_white.png" >
+									<h2>RIVIERA LINE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/Ffestiniog_railway.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/mer_white.png" >
+									<h2>FFESTINIOG RAILWAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/st_ives_bay_line.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/mer_white.png" >
+									<h2>SAINT IVES BAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/royal_scotsman.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/mer_white.png" >
+									<h2>ROYAL SCOTSMAN</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_13" data-pays='13' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/lakeside_and_haverthwaite_railway.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>LAKESIDE AND HAVERTHWAITE RAILWAY</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_14" data-pays='14' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/california_zephyr.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>CALIFORNIA ZEPHYR</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_15" data-pays='15' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/lezard_rouge.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/desert_white.png" >
+									<h2>LEZARD ROUGE</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_16" data-pays='16' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/bernina_express.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/montagne_white.png" >
+									<h2>BERNINA EXPRESS</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_14" data-pays='14' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/tram_SF.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/urbain_white.png" >
+									<h2>CABLE CARS</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_1 country_1" data-pays='1' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/grand_train.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>GRAND TRAIN</h2>
+								</div>
+							</a>
+							<a class="article_bloc continent_4 country_17" data-pays='17' href="javascript:" onclick="affArticle('article')">
+								<div class="bg" data-src="img/experiences/voix_aband_bolivie.jpg"></div>
+								<div class="overlay"></div>
+								<div class="middle">
+									<img class="logo" src="img/logos/insolite_white.png" >
+									<h2>VOIX ABANDONNEES DE BOLIVIE</h2>
+								</div>
+							</a>
+		                </div>
+		            </div>
+		            <div class="clear"></div>
+		        </div>
+			</div>
+		</div>
+		<footer></footer>
