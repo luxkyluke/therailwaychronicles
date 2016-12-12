@@ -1,0 +1,287 @@
+#cat_decouverte {
+    margin-top: 30px;
+} 
+
+.conteneur_categories ul{
+    margin: auto;
+    text-align: center;;
+}
+
+.conteneur_categories li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    width: 12%;
+    padding: 15px 0.9%;;
+    margin-right: 0.5em;
+/*     margin-top: 1.5em;
+margin-bottom: 1.5em; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* .conteneur_categories li{
+    background: url(../img/experiences/decouverte.jpg) no-repeat center center;
+    background-size: cover;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 4%;
+    margin-right: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+ }*/
+/* .conteneur_categories li .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/experiences/decouverte.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+} */
+
+.conteneur_categories a .overlay {
+    opacity: 0.25;
+}
+
+
+
+.conteneur_categories a li.current{
+    border-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: #306f31;;
+}
+
+
+
+.logo_categorie, .logo{
+    width: 100px;
+}
+
+#main_logo_cat{
+    width: 50%;
+}
+
+#top_title{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#top_title .title{
+    padding: 0;
+}
+
+.conteneur_categories h2{
+    text-align: center;
+    color: #FFF;
+    font-size: 1em;
+}
+
+#article_conteneur {
+    margin: 0 -0.75%;
+    margin-bottom: 50px;
+    padding: 8px;
+    border: 1px solid #dc6a1a;
+}
+
+#article_conteneur a {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    width: 31.5%;
+    margin: 0.75%;
+    line-height: 212px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loadImageHide {
+    display: none!important;
+}
+
+.experience .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/experiences/decouverte.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#article_conteneur a .overlay {
+    opacity: 0.5;
+}
+
+a .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+
+a .middle {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+a .middle h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0; /* 20px; */
+    padding-top: 10px;
+    font-family: Montserrat_Regular;
+}
+
+
+
+/*plus grand que tablette*/
+@media screen and (min-width: 1024px){
+    #article_conteneur a:hover > .bg{
+        -moz-transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);   
+        transform: scale(1.25);  
+        -webkit-transition: transform 10s ease-out;
+        -moz-transition: transform 10s ease-out;
+        -ms-transition: transform 10s ease-out;
+        -o-transition: transform 10s ease-out;
+        transition: transform 10s ease-out; 
+    }
+
+    #article_conteneur a:hover > .middle{
+        -moz-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);   
+        transform: scale(0.9);  
+
+        opacity: 0;
+    }
+
+    .conteneur_categories a:hover > li > .overlay{
+        opacity: 0;
+    }
+
+    .conteneur_categories a:hover > li > .middle{
+        -moz-transform: translateY(15px); 
+        -webkit-transform: translateY(15px); 
+        -ms-transform: translateY(15px); 
+        -o-transform: translateY(15px);  
+        transform: translateY(15px); 
+
+        opacity: 0;
+    }
+
+    #article_conteneur a:hover > .overlay{
+        opacity: 0;
+    }
+}
+
+@media  screen and (min-width: 1200px) and (max-width: 1400px){
+    p.title{
+        font-size: 4em;
+    }
+}
+
+
+@media  screen and (max-width: 1200px){
+    .conteneur_categories li {
+        width : 15%;
+        padding: 10px 1.8%;
+    }
+    a .middle h2 {
+        font-size: 13.5px;
+    }
+    #article_conteneur a {
+        width: 48%;
+    }
+    p.title{
+        font-size: 3.8em;
+    }
+    #main_logo_cat{
+        width: 40%;
+    }
+}
+
+@media  screen and (min-width: 400px) and (max-width: 1000px){
+    p.title{
+        font-size: 2.9em;;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .conteneur_categories li {
+        padding: 9px 1.8%;
+        width: 27%;
+    } 
+    .conteneur_categories li .middle .logo{ 
+        width: 75px;
+    } 
+
+@media screen and (max-width: 650px){
+    p.title{
+        font-size: 2em;
+    }
+
+    #article_conteneur a {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 500px){
+     .conteneur_categories li {
+        width : 27%;
+    } 
+     .conteneur_categories li .middle .logo{ 
+        width: 50%;
+    }
+    #cat_decouverte {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .conteneur_categories li {
+        width : 25.5%;
+        padding: 7px 2%;
+        margin-right : 2px;;
+    }
+
+}
+

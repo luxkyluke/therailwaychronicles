@@ -1,0 +1,456 @@
+.contentHeader{
+	background: #ABCCCF;
+}
+
+#destinations_map{
+	width: 100%;
+    height: 500px;
+}
+
+.destinations{
+	background: url(../img/destinations_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 0;
+}
+}
+
+.destinations .regions {
+    line-height: 70px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background: #FFFFFF;
+}
+
+
+.destinations .regions {
+	line-height: 70px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	background: #FFFFFF;
+}
+
+.destinations .regions .label {
+    font-size: 19px;
+    color: #b18857;
+    font-family: Montserrat_Semi-Bold;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.destinations .regions .items {
+    float: right;
+}
+
+.destinations .regions .items a.selected {
+    color: #454242;
+}
+
+.destinations .regions .items a:hover {
+    color: #454242;
+}
+
+#page.destinations{
+	border: none;
+}
+
+
+.destinations .regions .items a {
+    display: inline-block;
+    font-size: 20px;
+    font-family: Montserrat_Regular;
+    position: relative;
+    color: #9d9d9d;
+    text-decoration: none;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    margin-left: 25px;
+    padding: 0 14px;
+}
+
+.destinations span.count {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+    font-size: 11px;
+    width: 25px;
+    text-align: center;
+    font-family: Montserrat_Regular;
+    font-weight: 900;
+    color: #b18857;
+    border: 1px solid #b18857;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 6px;
+}
+
+.destinations .regions .items a:after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    right: 50%;
+    bottom: -4px;
+    background: #d5d5d5;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.destinations .regions .items a.selected:after {
+    left: 0%;
+    right: 0%;
+}
+
+.destinations .inner {
+    padding-top: 75px;
+}
+
+.destinations .inner aside {
+    width: 27%;
+    float: left;
+}
+
+.destinations .inner aside .block.continents {
+    font-family: Montserrat_Regular;
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 25px 40px;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.destinations .inner aside .block.continents h2 {
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    font-size: 17px;
+    text-transform: uppercase;
+    position: relative;;
+}
+
+.destinations .inner aside .block.continents h2 a {
+    color: #212120;
+}
+
+.destinations .inner aside .block.continents ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.destinations .inner aside .block.continents ul li:first-child {
+    border-top: none;
+}
+
+.destinations .inner aside .block.continents ul li a {
+    display: block;
+    line-height: 42px;
+    position: relative;
+    font-size: 17px;
+    text-decoration: none;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    color: #9d9d9d;
+}
+
+.destinations .inner aside .block.continents ul li {
+    border-top: 1px solid #f2f2f2;
+    display: none;
+}
+
+.destinations .inner .sidecontent {
+    float: right;
+    width: 67%;
+    overflow: hidden;
+    font-family: Montserrat_Regular;
+}
+
+.destinations .inner .sidecontent h1 {
+    font-size: 43px;
+    text-transform: none;
+    color: #212120;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.destinations .inner .sidecontent h1 span.count {
+    padding: 0px 18px;
+    line-height: 21px;
+    margin-top: -2px;
+    width: auto;
+    word-spacing: 3px;
+    margin-left: 20px;
+}
+
+.destinations .inner .sidecontent #article_conteneur {
+    font-size: 0;
+    padding-bottom: 200px;
+    float: left;
+    width: 105.5%;
+    border: none;
+}
+
+.destinations .inner .sidecontent #article_conteneur a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    line-height: 212px;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.destinations .inner aside .block.continents ul li a:hover {
+    color: #b18857;
+}
+
+.destinations .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/experiences/decouverte.jpg) no-repeat center center transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.destinations .inner aside .block.continents ul li.visible{
+    display: block;
+}
+
+.destinations .inner aside .block.continents ul li a.selected {
+    color: #212120;
+}
+
+.destinations .inner aside .block.continents ul li a.selected span.count {
+    background: #b18857;
+    color: #FFFFFF;
+}
+
+.destinations .inner aside .block.continents ul li a span.count {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6.5px;
+}
+
+.destinations .inner aside .block.continents h2 span.count {
+	background: #b18857;
+	color: #FFFFFF;
+}
+
+
+.destinations .inner aside .block.continents span.count {
+	right: 0;
+	top: 50%;
+	margin-top: -8px;
+    position: absolute;
+}
+
+.labels {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     width: 40px;
+     border: 2px solid black;
+     white-space: nowrap;
+}
+
+.gm-style > div:nth-child(7){
+    display:none;
+}
+
+@media screen and (max-width: 1024px){
+    #destinations_map {
+        height: 400px;
+    }
+    .destinations .regions .label{
+        font-size: 15px;
+        line-height: 35px;
+    }
+    .destinations .regions .items a{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .destinations .regions .items{
+        margin: auto;
+        text-align: center;
+    }
+    
+    .destinations .inner .sidecontent h1{
+        font-size: 35px;
+    }
+
+    .destinations .inner .sidecontent h1 span.count{
+        padding: 0px 10px;
+        line-height: 17px;
+        margin-top: 0px;
+        width: auto;
+        word-spacing: 3px;
+        margin-left: 15px;
+    }
+
+    .destinations .inner .sidecontent #article_conteneur a{
+            line-height: 190px;
+    }
+
+    .gmnoprint{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .destinations .inner aside .block.continents ul li.visible{
+        display: inline-block;
+    }
+
+    .destinations .inner aside .block.continents h2 {
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid #e7e7e7;
+        width: 70%;
+        padding-bottom: 8px;
+        margin-bottom: 7px;
+    }
+
+    .destinations .inner {
+        padding-top : 25px;
+    }
+
+    .destinations .inner aside {
+        width: 100%;
+    }
+
+    .destinations .inner aside .block.continents h2 a span.count{
+        right: inherit;
+        margin-left: 10px;
+        margin-top: -3px;
+        position: relative;;
+    }
+
+    .destinations .regions {
+        padding-bottom: 5px;
+    }
+
+    .destinations .inner aside .block.continents ul li a span.count{
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .destinations .inner aside .block.continents ul li a {
+        display: inline-block;
+        line-height: 25px;
+        position: relative;
+        font-size: 13px;
+    }
+
+    .destinations .inner aside .block.continents ul li{
+        border: none;
+        display: none;
+        margin-right: 7px;
+        margin-left: 7px;
+        margin-bottom: 0;
+
+    }
+
+    .destinations .inner aside .block.continents ul{
+        margin: auto;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .destinations .inner aside .block.continents{
+        padding-top: 7px;
+    }
+
+    .destinations .inner .sidecontent{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .destinations .inner aside .block.continents h2 {
+        font-size: 15px;
+    }
+
+    .destinations .inner aside .block.continents h2 a span.count{
+    margin-top: -2px;
+    }
+
+    #destinations_map {
+        height: 350px;
+    }
+    .destinations .regions .items a{
+        margin: 0 3px;
+        font-size: 13px;
+    }
+    .destinations .regions .items{
+        line-height: 30px;
+    }
+
+    .destinations a span.count {
+        line-height: 11px;
+        font-size: 10px;
+        width: 18px;
+        padding-bottom: 2px;
+    }
+
+    .destinations .regions .items a.selected:after {
+        left: 100%;
+        right: 100%;
+    }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 520px){
+    .destinations .inner .sidecontent #article_conteneur a{
+            line-height: 150px;
+    }
+
+    .logo_categorie, .logo{
+        width: 70px;
+    }
+
+    a .middle h2{
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .destinations .inner .sidecontent #article_conteneur a{
+        width: 90%;
+    }
+}
+
+

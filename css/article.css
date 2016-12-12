@@ -1,0 +1,290 @@
+/*******	HEADER	******/
+
+.owl-carousel
+{
+	position: relative;
+  	height: 75%;
+  	overflow: hidden;
+}
+
+.owl-carousel img
+{
+  	width: 100%;
+}
+
+.owl-carousel .item
+{
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#articletitle{
+	top: 37.5%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	position: absolute;
+	width: 95%;
+}
+
+#articletitle .arrow{
+	width:60px;
+	cursor: pointer;
+}
+
+#articletitle .arrow:hover{}
+
+#articletitle .nextArrow{
+	position: relative;
+    float: right;
+}
+
+#articletitle h1{
+	position: absolute;
+	color: white;
+	font-family: Arenq;
+	font-style: bold;
+}
+
+.logo_desc{
+	width: 100px;
+}
+
+.conteneur_logo_desc ul{
+	margin: auto;
+	text-align: center;;
+}
+
+.conteneur_logo_desc ul p {
+	text-align: center;
+}
+
+.conteneur_logo_desc li{
+	text-decoration: none;
+	display: inline-block;
+	margin: -3px 4%;;
+}
+
+.article p.logo_desc{
+	font-family: Montserrat_Light;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.25em;
+	width: 100%;
+}
+
+.article p{
+	font-family: Montserrat;
+	text-align: justify;
+}
+
+
+#itineraire_conteneur{
+	padding-top: 50%;
+	background: url(../img/carte.png) no-repeat center center;
+  	background-size: cover;
+  	border: 2px #000;
+  	border-style: dashed;
+}
+
+.food_img{
+/* 	display: table-cell;
+ 	vertical-align:middle; */
+	padding-top: 15%;
+  	border: 2px #000 solid;	
+  	position: absolute;
+    width: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.food_conteneur{
+	display: table;
+	position: relative;
+}
+
+.food_conteneur .food_img, .food_conteneur .food_txt{
+    float: none;
+}
+
+.food_conteneur--left {
+    margin-top: 80px;
+   	margin-bottom: 30px;
+}
+
+.food_conteneur--left .food_txt{
+    padding-left: 4%;
+}
+
+.food_conteneur--left .food_img{
+	left :10%;
+}
+
+.food_conteneur--right .food_img{
+	right: 10%;
+}
+
+.food_conteneur--right .food_txt{
+    padding-right: 4%;
+}
+
+.food_txt {
+	display: table-cell;
+ 	vertical-align:middle;
+}
+.article .video{
+	/* height: 555px;
+	margin-bottom: 8em; */
+}
+
+.conteneur_logo_desc{
+	margin-top:3%;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 46.25%; /* 16:9 */
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1200px){
+	.food_img{
+		padding-top: 20%;
+		width: 20%;
+	}
+	.food_conteneur--left .food_img{
+		left :8%;
+	}
+
+	.food_conteneur--right .food_img{
+		right: 8%;
+	}
+}
+
+@media (max-width: 1024px){
+	.conteneur_logo_desc li{
+		width: 19%;
+		margin: 0;
+		margin-right: 0px !important;
+	}
+
+	.article p.logo_desc{
+		font-size: 100%;
+	
+	}
+
+	#page .title{
+		font-size: 4em;
+		padding: 0.5em 0;
+	}
+
+	.food_img{
+		padding-top: 25%;
+		width: 25%;
+	}
+
+	.food_conteneur--left .food_img{
+		left :6%;
+	}
+
+	.food_conteneur--right .food_img{
+		right: 6%;
+	}
+}
+
+@media (max-width: 750px){
+	.food_img{
+		padding-top: 30%;
+		width: 30%;
+	}
+
+	.food_conteneur--left .food_img{
+		left :1%;
+	}
+
+	.food_conteneur--right .food_img{
+		right: 1%;
+	}
+}
+
+@media (max-width: 650px){
+	#articletitle .arrow{
+		width:40px;
+	}
+
+
+	.conteneur_logo_desc li{
+		margin:0;
+	}
+
+	ul li img.logo_desc{
+		width: 80%;
+	}
+
+	.article p.logo_desc{
+		font-size: 95%;
+	}
+
+	#page .title{
+		font-size: 3em;
+		padding: 0.35em 0;
+	}
+
+	.food_img{
+		padding-top: 40%;
+		width: 40%;
+	}
+
+	.food_conteneur--left .food_img{
+		left :-7%;
+	}
+
+	.food_conteneur--right .food_img{
+		right: -7%;
+	}
+}
+
+@media (max-width: 550px){
+	#itineraire_conteneur{
+		padding-top: 80%;
+	}
+
+	.food_img{
+		display: none;
+	}
+
+	.food_conteneur .food_txt{
+		padding:0;
+	}
+}
+
+@media (max-width: 400px){
+	#articletitle .arrow{
+		width:30px;
+	}
+
+	.conteneur_logo_desc li{
+		width: 18%;
+	}
+
+	ul li img.logo_desc{
+		width: 80%;
+	}
+
+	.article p.logo_desc{
+		font-size: 80%;
+	}
+
+	.article p{
+		font-size: 0.9em;
+	}
+}
