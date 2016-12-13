@@ -2,8 +2,11 @@
 
 $(document).ready(function(){	
 	// chargement de la page index
+
 	affArticle('index');
-  
+  setTimeout(function(){
+    $(".se-pre-con").fadeOut("slow");
+  }, 10000);
 
 	// parallax script
 	$(document).scroll(function()	{
