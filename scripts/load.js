@@ -43,16 +43,28 @@ var pays = [
  	$("footer").load(TEMPLATE_PATH+'footer.html', function(){
 		console.log("load footer "+page+" OK");
 		--done;
+		if(done == 0){
+			_callback();
+		}
 	});
+
  	var title = $("header").attr("data-title");
  	if(title != undefined){
 		$("header").load(TEMPLATE_PATH+'header.html', function(){
 			$(".title_logo").append(title);
 			console.log("load header "+page+" OK");
 			--done;
+			if(done == 0){
+				_callback();
+			}
 		});
 	}
-	else{--done;}
+	else{
+		--done;
+		if(done == 0){
+			_callback();
+		}
+	}
 	
 
 	$("nav").load(TEMPLATE_PATH+'nav.html', function()	{	

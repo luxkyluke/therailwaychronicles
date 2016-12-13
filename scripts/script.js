@@ -52,13 +52,15 @@ $(document).ready(function(){
 
       if(st<top_page){//(st-header_h+nav_h > 0){
         $('#menu').removeClass('dark');
+        $("#footer .parallax").addClass('hidden');
       }
       else{
+        $("#footer .parallax").removeClass('hidden');
         $('#menu').addClass('dark');
       }
 	});
 
-    $(document).scroll(function()
+/*    $(document).scroll(function()
     {
         if ($(this).scrollTop() > $(window).height())
         {
@@ -68,7 +70,7 @@ $(document).ready(function(){
         {
             $("#header").css("background-image", "url(img/background3.gif")
         }
-    })
+    })*/
 
 });
 
