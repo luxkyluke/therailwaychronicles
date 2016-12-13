@@ -5,10 +5,29 @@ $(document).ready(function(){
 	// chargement de la page index
   setTimeout(function(){
     affArticle('index');
-  }, 500);
+  }, 1000);
 
   setTimeout(function(){
-    $(".se-pre-con").fadeOut("slow");
+    if(!indexIsLoad){
+        affArticle('index');
+        //$(".se-pre-con").fadeOut("slow");
+    }
+    console.log("fadeout forcé");
+  }, 2000);
+
+  setTimeout(function(){
+    if(!indexIsLoad){
+        affArticle('index');
+        //$(".se-pre-con").fadeOut("slow");
+    }
+    console.log("fadeout forcé");
+  }, 4000);
+
+  setTimeout(function(){
+    if(!indexIsLoad){
+        alert("loading error, please refresh");
+        //$(".se-pre-con").fadeOut("slow");
+    }
     console.log("fadeout forcé");
   }, 6000);
 
@@ -44,6 +63,10 @@ $(document).ready(function(){
         if ($(this).scrollTop() > $(window).height())
         {
             $("#header").css("background-image", "url(img/experiences/background.jpg)");
+        }
+        else
+        {
+            $("#header").css("background-image", "url(img/background3.gif")
         }
     })
 

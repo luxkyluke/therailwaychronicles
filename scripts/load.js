@@ -1,10 +1,7 @@
  const TEMPLATE_PATH = "templates/"
- var articles;
+ var indexIsLoad = false;
  var nav_current;
- var articles = [
- 	"el chepe"
-
- ];
+ 
 
 ///!\ NE PAS CHANGER DE PLACE LES CONTINENTS EXISTANTS
 // 	NE PAS AJOUTER DE NOUVEAU CONTINENT
@@ -130,6 +127,7 @@ function affArticle(name){
 				    $(".se-pre-con").fadeOut("slow");
 				}, 1500);
 				console.log("Index chargé");
+				indexIsLoad = true;
 			});
 			break;
 
