@@ -1,13 +1,12 @@
 
 
+
 $(document).ready(function(){	
 	// chargement de la page index
-
-	affArticle('index');
+  affArticle('index');
   setTimeout(function(){
     $(".se-pre-con").fadeOut("slow");
-    alert("error");
-  }, 10000);
+  }, 7000);
 
 	// parallax script
 	$(document).scroll(function()	{

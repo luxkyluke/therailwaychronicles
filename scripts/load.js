@@ -179,6 +179,7 @@ function affArticle(name){
 				nav_current = '#nav_index';
 				updateCurrent();
 				$(".se-pre-con").fadeOut("slow");
+				console.log("Index chargé");
 			});
 			break;
 
