@@ -334,6 +334,21 @@ p{
 	float: right;
 }
 
+.footericon
+{
+	width:60px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	filter: grayscale(100%);
+	transition: .5s;
+}
+
+.footericon:hover
+{
+	filter: grayscale(0%);
+}
+
 /************MENU**********/
 ul#menu{
     margin: 0;

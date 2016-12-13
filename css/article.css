@@ -83,7 +83,7 @@
 
 #itineraire_conteneur{
 	padding-top: 50%;
-	background: url(../img/carte.png) no-repeat center center;
+	background: no-repeat center center;
   	background-size: cover;
   	border: 2px #000;
   	border-style: dashed;

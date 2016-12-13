@@ -114,7 +114,7 @@ margin-bottom: 1.5em; */
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/experiences/decouverte.jpg) no-repeat center center transparent;
+    /* background: url(../img/experiences/decouverte.jpg) no-repeat center center transparent; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
