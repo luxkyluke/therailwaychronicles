@@ -126,11 +126,13 @@ function affArticle(name){
 			load_template_page("index", "The Railway Chronicales", function(){
 				nav_current = '#nav_index';
 				updateCurrent();
-				$(".se-pre-con").fadeOut("slow");
+				setTimeout(function(){
+				    $(".se-pre-con").fadeOut("slow");
+				}, 1500);
 				console.log("Index chargé");
 			});
 			break;
-		
+
 		case "sacha":
 			load_template_page("sacha", "Le Voyage de Sacha", function(){
 				nav_current = '#nav_sacha';

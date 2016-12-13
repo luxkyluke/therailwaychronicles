@@ -9,6 +9,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $(".se-pre-con").fadeOut("slow");
+    console.log("fadeout forcé");
   }, 6000);
 
 	// parallax script
