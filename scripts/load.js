@@ -122,6 +122,15 @@ function updateCurrent(){
 function affArticle(name){
 	$(".se-pre-con").fadeIn(0);
 	switch(name){
+		case "index":
+			load_template_page("index", "The Railway Chronicales", function(){
+				nav_current = '#nav_index';
+				updateCurrent();
+				$(".se-pre-con").fadeOut("slow");
+				console.log("Index chargé");
+			});
+			break;
+		
 		case "sacha":
 			load_template_page("sacha", "Le Voyage de Sacha", function(){
 				nav_current = '#nav_sacha';
@@ -171,15 +180,6 @@ function affArticle(name){
 				loadCaroussel(function(){
 					$(".se-pre-con").fadeOut("slow");
 				});
-			});
-			break;
-
-		case "index":
-			load_template_page("index", "The Railway Chronicales", function(){
-				nav_current = '#nav_index';
-				updateCurrent();
-				$(".se-pre-con").fadeOut("slow");
-				console.log("Index chargé");
 			});
 			break;
 

@@ -7,6 +7,10 @@ $(document).ready(function(){
     affArticle('index');
   }, 500);
 
+  setTimeout(function(){
+    $(".se-pre-con").fadeOut("slow");
+  }, 6000);
+
 	// parallax script
 	$(document).scroll(function()	{
   		var st = $(this).scrollTop();
