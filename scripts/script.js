@@ -28,15 +28,14 @@ $(document).ready(function(){
 
       //Scroll menu degradé
       var header_h = $('header').height();
+      var top_page = $("#page").offset().top;
       var nav_h = $('#menu').height();  
 
-      
-
-      if(st-header_h+nav_h > 0){
-        $('#menu').addClass('dark');
+      if(st<top_page){//(st-header_h+nav_h > 0){
+        $('#menu').removeClass('dark');
       }
       else{
-        $('#menu').removeClass('dark');
+        $('#menu').addClass('dark');
       }
 	});
 
