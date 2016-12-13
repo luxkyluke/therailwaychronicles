@@ -6,6 +6,7 @@ $(document).ready(function(){
 	affArticle('index');
   setTimeout(function(){
     $(".se-pre-con").fadeOut("slow");
+    alert("error");
   }, 10000);
 
 	// parallax script
