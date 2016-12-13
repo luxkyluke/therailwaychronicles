@@ -46,7 +46,7 @@ p{
 }
 
 #home #header{
-  background: url(../img/background3.gif);
+  /* background: url(../img/background3.gif); */
   background-position: center;
   background-size: cover;
 }

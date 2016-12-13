@@ -290,7 +290,7 @@ function loadBG(_callback){
 			}	
 		});	
 		if (src != undefined){
-			if($(this).hasClass('article_header')){
+			if($(this).hasClass('article_header') || $(this).attr('id')=="home"){
 				$('#header').css('background-image', 'url('+src+')');
 			}
 			else
