@@ -125,7 +125,7 @@ function affArticle(name){
 				updateCurrent();
 				setTimeout(function(){
 				    $(".se-pre-con").fadeOut("slow");
-				}, 1500);
+				}, 1000);
 				console.log("Index chargé");
 				indexIsLoad = true;
 			});

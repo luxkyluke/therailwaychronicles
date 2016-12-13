@@ -72,8 +72,5 @@ function initMap(_callback){
 
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
-    map.event.addListenerOnce(map, 'idle', function(){
-      _callback();
-    });
   }
 }
