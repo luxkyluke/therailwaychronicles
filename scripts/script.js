@@ -3,10 +3,9 @@
 
 $(document).ready(function(){	
 	// chargement de la page index
-  affArticle('index');
   setTimeout(function(){
-    $(".se-pre-con").fadeOut("slow");
-  }, 7000);
+    affArticle('index');
+  }, 500);
 
 	// parallax script
 	$(document).scroll(function()	{
