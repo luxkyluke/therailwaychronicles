@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pos",
+				"position"
+			],
+			[
 				"max-",
 				"max-width"
 			],
@@ -164,10 +168,18 @@
 			}
 		},
 		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 887,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "templates/article.html",
 			"settings":
 			{
-				"buffer_size": 4949,
+				"buffer_size": 5086,
 				"line_ending": "Windows"
 			}
 		},
@@ -199,7 +211,7 @@
 			"file": "scripts/maps.js",
 			"settings":
 			{
-				"buffer_size": 1875,
+				"buffer_size": 1891,
 				"line_ending": "Windows"
 			}
 		},
@@ -207,7 +219,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 12584,
+				"buffer_size": 13017,
 				"line_ending": "Windows"
 			}
 		},
@@ -231,7 +243,15 @@
 			"file": "css/article.css",
 			"settings":
 			{
-				"buffer_size": 3486,
+				"buffer_size": 3776,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/load.js",
+			"settings":
+			{
+				"buffer_size": 12248,
 				"line_ending": "Windows"
 			}
 		}
@@ -273,15 +293,13 @@
 	},
 	"expanded_folders":
 	[
-		"/D/wamp64/www/TripOnRail",
-		"/D/wamp64/www/TripOnRail/css",
-		"/D/wamp64/www/TripOnRail/experiences",
-		"/D/wamp64/www/TripOnRail/scripts",
-		"/D/wamp64/www/TripOnRail/scripts/json",
-		"/D/wamp64/www/TripOnRail/templates"
+		"/D/wamp64/www/TripOnRail"
 	],
 	"file_history":
 	[
+		"/D/wamp64/www/TripOnRail/scripts/modernizr.js",
+		"/D/wamp64/www/therailwaychronicles/scripts/load.js",
+		"/D/wamp64/www/TripOnRail/img/logos/LeftArrow.png",
 		"/D/wamp64/www/TripOnRail/css/experiences.css",
 		"/D/wamp64/www/TripOnRail/scripts/script.js",
 		"/D/wamp64/www/TripOnRail/scripts/load.js",
@@ -406,10 +424,7 @@
 		"/D/Téléchargements/Level - Copie.txt",
 		"/D/Documents/C/projet_c_anfray.c",
 		"/D/Téléchargements/Level.txt",
-		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Cube.h",
-		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Point3D.h",
-		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Sphere.h",
-		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Vector3D.h"
+		"/D/Téléchargements/Raytracer/Raytracer/include/geometry/Cube.h"
 	],
 	"find":
 	{
@@ -417,7 +432,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 158.0,
+		"height": 221.0,
 		"where_history":
 		[
 			"",
@@ -436,6 +451,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"important",
+			"menu__link",
+			".menu__item",
+			"current",
+			"currend",
+			"#menu .menu__link",
+			"nav #burger_menu #menu .menu__link",
+			".menu__wrapper",
+			"nav #burger_menu #menu",
+			"nav #burger_menu #menu.burger",
+			"arr",
+			"loadCaroussel",
 			"video",
 			".food_conteneur--left",
 			".nine.columns",
@@ -551,19 +578,7 @@
 			"menu",
 			"decouverte.jpg",
 			"decourverte.jpg",
-			"    color: #1EAEDB;",
-			"a",
-			"* ",
-			"* {",
-			"*",
-			"padding",
-			"\"){\n",
-			"js-scrollTo",
-			"twothi",
-			"SLAOEP",
-			"c60000",
-			"montserrat",
-			"montserrat\n"
+			"    color: #1EAEDB;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -615,8 +630,37 @@
 						"selection":
 						[
 							[
-								257,
-								257
+								1874,
+								1874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								490
 							]
 						],
 						"settings":
@@ -628,24 +672,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "templates/article.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4949,
+						"buffer_size": 5086,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4769,
-								4769
+								277,
+								277
 							]
 						],
 						"settings":
@@ -655,14 +699,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2653.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "templates/experiences.html",
 					"semi_transient": false,
 					"settings":
@@ -691,7 +735,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "templates/header.html",
 					"semi_transient": false,
 					"settings":
@@ -715,11 +759,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "templates/nav.html",
 					"semi_transient": false,
 					"settings":
@@ -731,8 +775,8 @@
 						"selection":
 						[
 							[
-								236,
-								236
+								183,
+								183
 							]
 						],
 						"settings":
@@ -744,30 +788,30 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "scripts/maps.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1875,
+						"buffer_size": 1891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								1884,
+								1884
 							]
 						],
 						"settings":
@@ -777,27 +821,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 66.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12584,
+						"buffer_size": 13017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2706,
-								2706
+								12611,
+								12611
 							]
 						],
 						"settings":
@@ -806,14 +850,14 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3680.0,
+						"translation.y": 18406.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "css/font.css",
 					"semi_transient": false,
 					"settings":
@@ -825,8 +869,8 @@
 						"selection":
 						[
 							[
-								181,
-								199
+								153,
+								153
 							]
 						],
 						"settings":
@@ -838,11 +882,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "css/skeleton.css",
 					"semi_transient": false,
 					"settings":
@@ -865,27 +909,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6235.0,
+						"translation.y": 6204.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "css/article.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3486,
+						"buffer_size": 3776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1920,
-								1920
+								450,
+								450
 							]
 						],
 						"settings":
@@ -894,7 +938,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2461.0,
+						"translation.y": 322.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "scripts/load.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5157,
+								5157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4269.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -931,7 +1004,7 @@
 		"cols":
 		[
 			0.0,
-			0.523156611822,
+			0.460553646418,
 			1.0
 		],
 		"rows":
@@ -959,6 +1032,18 @@
 		"selected_items":
 		[
 			[
+				"inde",
+				"index.html"
+			],
+			[
+				"load",
+				"scripts\\load.js"
+			],
+			[
+				"na",
+				"templates\\nav.html"
+			],
+			[
 				"ske",
 				"css\\skeleton.css"
 			],
@@ -977,10 +1062,6 @@
 			[
 				"sty",
 				"css\\style.css"
-			],
-			[
-				"na",
-				"templates\\nav.html"
 			],
 			[
 				"",
@@ -1023,20 +1104,12 @@
 				"templates\\header.html"
 			],
 			[
-				"load",
-				"scripts\\load.js"
-			],
-			[
 				"lo",
 				"scripts\\load.js"
 			],
 			[
 				"hea",
 				"templates\\header.html"
-			],
-			[
-				"inde",
-				"templates\\index.html"
 			],
 			[
 				"nav",

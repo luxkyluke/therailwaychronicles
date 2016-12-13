@@ -132,32 +132,45 @@ function affArticle(name){
 
 		case "article":
 			load_template_page("article", "Title", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
+				
 			});
 			break;
 		case "El_Chepe":
 			load_template_page("El_Chepe", "El Chepe - Mexique", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
 			});
 			break;
 		case "Blue_Train":
 			load_template_page("Blue_Train", "Blue Train - South Africa", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
 			});
 			break;
 		case "Hiram_Bingham":
 			load_template_page("Hiram_Bingham", "Hiram Bingham - Pérou", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
 			});
 			break;
 		case "Petite_Ceinture":
 			load_template_page("Petite_Ceinture", "Petite Ceinture - France", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
 			});
 			break;
 		case "White_Pass":
 			load_template_page("White_Pass", "White Pass and Yukon Route - Alaska", function(){
-				loadCaroussel();
+				loadCaroussel(function(){
+					$(".se-pre-con").fadeOut("slow");
+				});
 			});
 			break;
 
@@ -253,7 +266,6 @@ function affArticle(name){
 function loadImgsBackGrounds(page, _callback){
    	switch(page){
 		case "article":
-			//document.getElementById("header").style.backgroundImage = "url('img/articles/"+$("#page").data("id")+"/background.jpg')";
 			loadBG(_callback);
 			break;
 
@@ -265,30 +277,28 @@ function loadImgsBackGrounds(page, _callback){
 
 function loadBG(_callback){
 	var cpt =0, i=0;
-	var imgs = new Array();
-	//var nbImg = $(".bg").size();
 	$(".bg").each(function(){
-		imgs[i] = new Image();
 		var src = $(this).data('src');
-		imgs[i].onload = function(){
+		$(this).imagesLoaded( {background: true}, function() {
 			console.log("img loaded");
 			cpt++;
 			if(cpt == i){
 				console.log("img DONE");
 				_callback();
+				return;
 			}	
-		}
+		});	
 		if (src != undefined){
 			if($(this).hasClass('article_header')){
 				$('#header').css('background-image', 'url('+src+')');
 			}
 			else
 				$(this).css('background-image', 'url('+src+')');
-			imgs[i].src = src;
 			i++;
 		}
 	});
-	_callback();
+	if(i==0)
+		_callback();
 }
 
 function clickCatExpAnim(current, scroll){
@@ -471,12 +481,12 @@ function markerClickEvent(id){
 	$("#pays_"+id + " a").click();
 }
 
-function loadCaroussel(){
+function loadCaroussel(_callback){
 	var owl = $('#carousel');
-	/*if(owl.lenght == undefined){
-		console.log("CAROUSEL LOAD ERROR");
+/*	if(!$('#carousel').lenght){
+		console.log('out');
 		return;
-	}*/
+		}*/
 	owl.owlCarousel({
 		items: 1,
 		slideSpeed : 1000,
@@ -489,7 +499,6 @@ function loadCaroussel(){
         owl.trigger('next.owl');
 	    e.preventDefault();
 	});
-	console.log("CAROUSEL LOAD OK");
 	$('.nextArrow').on('click', function (e) {
         owl.trigger('next.owl');
 	    e.preventDefault();
@@ -498,7 +507,22 @@ function loadCaroussel(){
         owl.trigger('prev.owl');
 	    e.preventDefault();
 	});
-	makeResponsiveCarousel();
+	var cpt =0, i=0;
+	$("#carousel .item").each(function(){
+		$(this).imagesLoaded( function() {
+			cpt++;
+			if(cpt == i){
+				makeResponsiveCarousel();
+				_callback();
+			}
+		});
+		i++;
+	});
+	if(i == 0){
+		makeResponsiveCarousel();
+		_callback();
+	}
+	
 }
 
 function makeResponsiveCarousel(){
@@ -511,6 +535,5 @@ function makeResponsiveCarousel(){
   $("#page").css('top', delta);
 
   $("#articletitle").css("top", imgH/2);
-  $(".se-pre-con").fadeOut("slow");
 }
 

@@ -59,15 +59,21 @@ function initMap(_callback){
           markerClickEvent(this.id);
       });
 
+      google.maps.event.addListenerOnce(map, 'idle', function(){
+          _callback();
+      });
+
       $(window).on('resize', function() {
           var currCenter = map.getCenter();
           google.maps.event.trigger(map, 'resize');
           map.setCenter(currCenter);
-      })
+      });
     });
 
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
-    _callback();
+    map.event.addListenerOnce(map, 'idle', function(){
+      _callback();
+    });
   }
 }
