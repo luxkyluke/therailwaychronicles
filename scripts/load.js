@@ -147,6 +147,7 @@ function affArticle(name){
 			load_template_page("sacha", "Le Voyage de Sacha", function(){
 				nav_current = '#nav_sacha';
 				updateCurrent();
+				replaceSachaDots();
 				$(".se-pre-con").fadeOut("slow");
 			})
 			break;
@@ -550,3 +551,10 @@ function makeResponsiveCarousel(){
   $("#articletitle").css("top", imgH/2);
 }
 
+function replaceSachaDots(){
+	$(".chapter").each(function(){
+		var id = $(this).data('id');
+		var top = $(this).offset().top - $("#page").offset().top;
+		$("#dot"+id).css('top', top);
+	});
+}
