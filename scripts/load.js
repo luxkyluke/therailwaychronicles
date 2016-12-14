@@ -76,8 +76,6 @@ var pays = [
 		});
 		$('#menu a').on('click', function(e) {
 			e.preventDefault();
-			/*var id = $(this).attr('id');
-			var tmp = splite(id, '_');*/
 
 		});
 		$('#burger').click(function(e){
@@ -100,9 +98,9 @@ var pays = [
 		basic_load(page, function(){
 		    console.log("bacic load "+page+" OK");
 		    window.history.pushState({"page":page, "pageTitle":title},"", "");
-	    	$(document).scrollTop(0);
 	    	loadImgsBackGrounds(page, function(){
-	    		_callback();
+	    	_callback();
+	    	$(document).scrollTop(0);
 	    	});
 	    	
 	    });
@@ -148,36 +146,47 @@ function affArticle(name){
 				nav_current = '#nav_sacha';
 				updateCurrent();
 				replaceSachaDots();
-				$(".se-pre-con").fadeOut("slow");
-			})
+				setTimeout(function(){
+				    $(".se-pre-con").fadeOut("slow");
+				}, 1000);
+			});
 			break;
 
 		case "article":
 			load_template_page("article", "Title", function(){
 				loadCaroussel(function(){
-					$(".se-pre-con").fadeOut("slow");
-				});
-				
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);	
+					nav_current='#nav_article';
+				});			
 			});
 			break;
 		case "El_Chepe":
 			load_template_page("El_Chepe", "El Chepe - Mexique", function(){
 				loadCaroussel(function(){
-					$(".se-pre-con").fadeOut("slow");
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
+					nav_current='#nav_article';
 				});
 			});
 			break;
 		case "Blue_Train":
 			load_template_page("Blue_Train", "Blue Train - South Africa", function(){
-				loadCaroussel(function(){
-					$(".se-pre-con").fadeOut("slow");
-				});
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
+					nav_current='#nav_article';
 			});
 			break;
 		case "Hiram_Bingham":
 			load_template_page("Hiram_Bingham", "Hiram Bingham - Pérou", function(){
 				loadCaroussel(function(){
-					$(".se-pre-con").fadeOut("slow");
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
+					nav_current='#nav_article';		
 				});
 			});
 			break;
@@ -186,12 +195,16 @@ function affArticle(name){
 				loadCaroussel(function(){
 					$(".se-pre-con").fadeOut("slow");
 				});
+				nav_current='#nav_article';
 			});
 			break;
 		case "White_Pass":
 			load_template_page("White_Pass", "White Pass and Yukon Route - Alaska", function(){
 				loadCaroussel(function(){
-					$(".se-pre-con").fadeOut("slow");
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
+					nav_current='#nav_article';
 				});
 			});
 			break;
@@ -202,7 +215,9 @@ function affArticle(name){
 				clickCatExpAnim($("#cat_decouverte a li").first(), false);				
 				nav_current = '#nav_experiences';
 				updateCurrent();
-				$(".se-pre-con").fadeOut("slow");
+				setTimeout(function(){
+				    $(".se-pre-con").fadeOut("slow");
+				}, 1000);
 
 			});
 			break;
@@ -213,7 +228,9 @@ function affArticle(name){
 				updateCurrent();
 				initMap(function(){
 					destinationsLoad(function(){
-						$(".se-pre-con").fadeOut("slow");
+						setTimeout(function(){
+						    $(".se-pre-con").fadeOut("slow");
+						}, 1000);
 					});
 				});
 				
@@ -223,13 +240,16 @@ function affArticle(name){
 		case "about":
 			if(nav_current === '#nav_index' || nav_current === '#nav_contact'
 					|| nav_current === '#ourteam'){
+				$(".se-pre-con").fadeOut(1);
 				$('html, body').animate({
 					scrollTop: $("#ourteam").offset().top-50
 				}, 2000, false);
 				$(nav_current).removeClass('current');
 				nav_current='#nav_about';
 				updateCurrent();
-				$(".se-pre-con").fadeOut("slow");
+				if($("#menu").hasClass('burger')){
+					$(".burger-menu").click();
+				}
 			}
 			else{
 				load_template_page("index", "The Railway Chronicales", function(){
@@ -238,7 +258,9 @@ function affArticle(name){
 					$('html, body').animate({
 						scrollTop: $("#ourteam").offset().top-50
 					}, 2000, false);
-					$(".se-pre-con").fadeOut("slow");
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
 				});
 			}
 			break;
@@ -246,13 +268,16 @@ function affArticle(name){
 		case "contact":
 			if(nav_current === '#nav_index' || nav_current === '#nav_about'
 					|| nav_current === '#nav_contact'){
+				$(".se-pre-con").fadeOut(1);
 				$('html, body').animate({
 					scrollTop: $("#contactus").offset().top-50
 				}, 2000, false);
 				$(nav_current).removeClass('current');
 				nav_current= '#nav_contact';
 				updateCurrent();
-				$(".se-pre-con").fadeOut("slow");
+				if($("#menu").hasClass('burger')){
+					$(".burger-menu").click();
+				}
 			}
 			else{
 				load_template_page("index", "The Railway Chronicales", function(){
@@ -261,7 +286,9 @@ function affArticle(name){
 					$('html, body').animate({
 						scrollTop: $("#contactus").offset().top-50
 					}, 1500);
-					$(".se-pre-con").fadeOut("slow");
+					setTimeout(function(){
+					    $(".se-pre-con").fadeOut("slow");
+					}, 1000);
 				}, false);
 			}
 
@@ -357,8 +384,13 @@ function experienceAnim(){
 }
 
 function scrollToPage(){
-	if($(window).width()>1024){
-		$('html, body').animate({
+	if($(window).width()<850){
+		$('html,body').stop(true, false).animate({
+	        scrollTop: $("#region_title").offset().top-50
+	    }, 1000);
+	}
+	else{
+		$('html,body').stop(true, false).animate({
 	        scrollTop: $("#page").offset().top-50
 	    }, 1000);
 	}
@@ -543,11 +575,11 @@ function makeResponsiveCarousel(){
   var imgH = $(".owl-stage-outer").height();
   if(imgH == undefined)
     return ;
-  var delta = imgH - $("#carousel").height();
-  if(delta>0)
+  /*var delta = imgH - $("#carousel").height();
+  if(delta>0){
+  	$("#articletitle").css("top", '37.5%');
   	return;
-  $("#page").css('top', delta);
-
+  }*/
   $("#articletitle").css("top", imgH/2);
 }
 

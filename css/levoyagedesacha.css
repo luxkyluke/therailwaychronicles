@@ -1,7 +1,7 @@
 #bar
 {
 	position: absolute;
-	height: 3000px;
+	height: 100%;
 	background-color: black;
 	left: 15%;
 	width: 8px;
@@ -78,4 +78,10 @@
 	font-size: 1.1em;
 	text-align: right;
 	margin-top: 10px;
+}
+
+@media (max-width: 350px){
+	.chaptertitle{
+		font-size: 1.45em;
+	}
 }

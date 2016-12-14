@@ -3,33 +3,10 @@
 
 $(document).ready(function(){	
 	// chargement de la page index
-  setTimeout(function(){
+    
+    console.log("top");
     affArticle('index');
-  }, 1000);
-
-  setTimeout(function(){
-    if(!indexIsLoad){
-        affArticle('index');
-        //$(".se-pre-con").fadeOut("slow");
-    }
-    console.log("fadeout forcé");
-  }, 2000);
-
-  setTimeout(function(){
-    if(!indexIsLoad){
-        affArticle('index');
-        //$(".se-pre-con").fadeOut("slow");
-    }
-    console.log("fadeout forcé");
-  }, 4000);
-
-  setTimeout(function(){
-    if(!indexIsLoad){
-        alert("loading error, please refresh");
-        //$(".se-pre-con").fadeOut("slow");
-    }
-    console.log("fadeout forcé");
-  }, 6000);
+    $(document).scrollTop(0);
 });
 
 $(document).scroll(function() {
@@ -56,7 +33,13 @@ $(document).scroll(function() {
 
 $(window).resize(function() {
   if(nav_current == "#nav_sacha"){
-    alert("e");
     replaceSachaDots();
+  }
+  else if(nav_current == "#nav_article"){
+    $(".se-pre-con").fadeIn(0);
+    setTimeout(function(){
+      makeResponsiveCarousel();
+      $(".se-pre-con").fadeOut('slow');
+    }, 300);
   }
 });

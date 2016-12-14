@@ -92,6 +92,7 @@
 }
 .owl-carousel.owl-loaded {
   display: block;
+  height: auto;
 }
 .owl-carousel.owl-loading {
   opacity: 0;
