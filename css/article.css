@@ -30,11 +30,14 @@
 }
 
 #articletitle .arrow{
-	width:60px;
+	width:50px;
 	cursor: pointer;
+	-webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
 }
-
-#articletitle .arrow:hover{}
 
 #articletitle .nextArrow{
 	position: relative;
@@ -46,6 +49,7 @@
 	color: white;
 	font-family: Arenq;
 	font-style: bold;
+	line-height: 1em;
 }
 
 .logo_desc{
@@ -135,7 +139,6 @@
  	vertical-align:middle;
 }
 
-
 .conteneur_logo_desc{
 	margin-top:3%;
 }
@@ -144,7 +147,7 @@
 	position: relative;
 	padding-bottom: 46.25%; /* 16:9 */
 	height: 0;
-	margin-bottom: 3em;
+	margin-bottom: 5em;
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -152,6 +155,25 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.ytp-watermark .yt-uix-sessionlink{
+	display: none;
+}
+
+#articletitle .mouse{
+	transform: translateY(200%);
+}
+
+#articletitle p{
+	font-size: 2.5em;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 1%;
+	font-weight: 600;
 }
 
 @media (max-width: 1200px){
@@ -167,6 +189,33 @@
 		right: 8%;
 	}
 }
+
+@media (max-width: 1150px){
+	#articletitle .mouse{
+		transform: translateY(180%);
+	}
+
+	#articletitle .mouse #mouse{
+		width:25px;
+	}
+
+	#articletitle .mouse #arrow{
+		width: 30px;
+	}
+}
+
+@media (min-width: 1024px){
+	#articletitle .arrow:hover{
+		
+	}
+
+	#articletitle .nextArrow:hover{
+		transform: translateX(15%);
+	}
+	#articletitle .prevArrow:hover{
+		transform: translateX(-15%);
+	}
+} 
 
 @media (max-width: 1024px){
 	.conteneur_logo_desc li{
@@ -212,13 +261,21 @@
 	.food_conteneur--right .food_img{
 		right: 1%;
 	}
+
+	#articletitle p{
+		font-size: 	2em;
+
+	}
 }
 
 @media (max-width: 650px){
 	#articletitle .arrow{
 		width:40px;
 	}
-
+		
+	#articletitle p{
+		font-size: 1.5em;	
+	}
 
 	.conteneur_logo_desc li{
 		margin:0;
@@ -268,6 +325,11 @@
 @media (max-width: 400px){
 	#articletitle .arrow{
 		width:30px;
+	}
+		
+	#articletitle p{
+		font-size: 	1.3em;
+		padding-top: 	0.5em;
 	}
 
 	.conteneur_logo_desc li{

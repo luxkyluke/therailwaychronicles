@@ -27,7 +27,9 @@ p{
 }
 
 .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.js #loader { 
+	display: block; position: absolute; left: 100px; top: 0; 
+}
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -36,6 +38,7 @@ p{
 	height: 100%;
 	z-index: 9999;
 	background: url(../img/loader3.gif) center no-repeat #fff;
+	overflow: hidden;
 }
 
 /***********	HOME	************/
@@ -61,7 +64,60 @@ p{
     margin: 0;
 }
 
+.mouse{
+	position: absolute;
+	width: 0;
+	z-index: 3;
+	right: 50%;
+	top: 80%;
+	display: block;
+}
 
+.mouse #mouse{
+	width:40px;
+}
+
+.mouse #arrow{
+	width: 45px;
+	-webkit-animation: moov_mouse 2s infinite forwards; /* Safari 4+ */
+  	-moz-animation:    moov_mouse 2s infinite forwards; /* Fx 5+ */
+  	-o-animation:      moov_mouse 2s infinite forwards; /* Opera 12+ */
+ 	 animation:        moov_mouse 2s infinite forwards;
+}
+
+@-webkit-keyframes moov_mouse {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, 25%); }
+  100% { transform: translate(-50%, 0); }
+}
+
+@-moz-keyframes moov_mouse {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, 25%); }
+  100% { transform: translate(-50%, 0); }
+}
+
+@-o-keyframes moov_mouse {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, 25%); }
+  100% { transform: translate(-50%, 0); }
+}
+
+@keyframes moov_mouse {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, 25%); }
+  100% { transform: translate(-50%, 0); }
+}
+
+.mouse img{
+	right:50%;
+	transform:translateX(-50%);	
+	-webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
 
 * {
     margin: 0;
@@ -386,6 +442,7 @@ p{
 /************MENU**********/
 ul#menu{
     margin: 0;
+    overflow: hidden;
 } 
 
 #burger_menu ul#menu{
@@ -396,7 +453,7 @@ ul#menu{
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 0;
-	width: 100%;;
+	width: 100%;
 }
 
 ul#menu li:last-child{
@@ -672,9 +729,21 @@ nav #burger_menu #burger{
 	#contact{
 		margin-bottom: 50px;
 	}
+
+	.mouse #mouse{
+		width:30px;
+	}
+
+	.mouse #arrow{
+		width: 35px;
+	}
 }
 
 @media (max-width: 1050px){
+	.mouse{
+		display: none;
+	}
+
 	nav #burger_menu #burger{
 		visibility: visible;
 	}

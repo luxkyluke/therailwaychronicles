@@ -92,8 +92,13 @@ margin-bottom: 1.5em; */
     border: 1px solid #dc6a1a;
 }
 
-#article_conteneur a {
+#article_conteneur a.visible{
     display: inline-block;
+    visibility: visible;
+}
+
+#article_conteneur a {
+    display: none;
     vertical-align: top;
     text-align: center;
     text-decoration: none;
@@ -102,6 +107,12 @@ margin-bottom: 1.5em; */
     line-height: 212px;
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    visibility: hidden;
 }
 
 .loadImageHide {

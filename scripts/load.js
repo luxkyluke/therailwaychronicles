@@ -174,10 +174,12 @@ function affArticle(name){
 			break;
 		case "Blue_Train":
 			load_template_page("Blue_Train", "Blue Train - South Africa", function(){
+				loadCaroussel(function(){
 					setTimeout(function(){
 					    $(".se-pre-con").fadeOut("slow");
 					}, 1000);
 					nav_current='#nav_article';
+				});
 			});
 			break;
 		case "Hiram_Bingham":
@@ -351,12 +353,13 @@ function clickCatExpAnim(current, scroll){
 	//tri des expériences
 	var idExp = current.data('exp');
 	$("#article_conteneur a").each(function(){
-		$(this).css('display', 'none');
+		/*$(this).css('display', 'none');*/
+		$(this).removeClass('visible')
 	});	
 
 
 	$(".exp_"+idExp).each(function(){
-		$(this).css('display', 'inline-block');
+		$(this).addClass('visible');
 	});
 
 	var srcLogoBlanc = current.find(".middle").children('img').prop('src');
@@ -377,6 +380,7 @@ function clickCatExpAnim(current, scroll){
 }
 
 function experienceAnim(){
+	$('.article_bloc').addClass('visible');
 	$("#cat_decouverte a li").click(function(){
 		clickCatExpAnim($(this), true);
 		return false;
@@ -397,6 +401,7 @@ function scrollToPage(){
 }
 
 function destinationsLoad(_callback){
+	$('.article_bloc').addClass('visible');
 	//initialisation des indicateurs de nombre 
 	//le nb d'exp par région
 	var nbExp = $('.article_bloc').size();
@@ -448,12 +453,13 @@ function destinationsLoad(_callback){
 		$('.inject h2 a').data('cont', idContinent);
 
 		if(idContinent == 0){
-			$(".article_bloc").css("display", "inline-block");
+			$(".article_bloc").addClass('visible')
 			$('.inject ul li').addClass('visible');
 		}
 		else{
 			//on efface tous les blocs articles
-			$(".article_bloc").css("display", "none");
+			$(".article_bloc").removeClass('visible')
+			/*$(".article_bloc").css("display", "none");*/
 			
 			//on efface tous les pays dans la fenetre de gauche
 			$('.inject ul li').removeClass('visible');
@@ -463,8 +469,8 @@ function destinationsLoad(_callback){
 				var idPays = $(this).data('pays');
 				$('#pays_'+idPays).addClass('visible');
 				//console.log($(' li').find("data-id='"+idPays+"'"));
-			
-				$(this).css('display', 'inline-block');
+				$(this).addClass('visible');
+				/*$(this).css('display', 'inline-block');*/
 			});
 
 		}
@@ -492,21 +498,23 @@ function destinationsLoad(_callback){
 
 		$('#region_title').html(nom + "<span class='count'>"+nb+exp+"</span>");
 
-		$(".article_bloc").css("display", "none");
+		/*$(".article_bloc").css("display", "none");*/
+		$(".article_bloc").removeClass('visible');
 		if(idPays == 0){
 			var idCont = $(this).data('cont');
 			if(idCont == 0)
-				$(".article_bloc").css("display", "inline-block");
+				$(".article_bloc").addClass('visible');
+				/*$(.article_bloc).css('display', 'inline-block');*/
 			else
 				$(".continent_"+idCont).each(function(){
-					$(this).css('display', 'inline-block');
-				});
+				$(this).addClass('visible');
+				/*$(this).css('display', 'inline-block');*/				});
 		}
 		else{
 			//on efface tous les blocs articles
 			$(".country_"+idPays).each(function(){
-				$(this).css('display', 'inline-block');
-			});
+				$(this).addClass('visible');
+				/*$(this).css('display', 'inline-block');*/			});
 		}	
 		scrollToPage();
 		return false;
@@ -535,11 +543,13 @@ function loadCaroussel(_callback){
 		}*/
 	owl.owlCarousel({
 		items: 1,
-		slideSpeed : 1000,
+		autoPlay: true,
+		slideSpeed : 5000,
 		singleItem: true,
 		loop:true,
 		lazyLoad : true,
-		autoPlay: 5000
+		autoPlaySpeed: 5000,
+    	autoPlayTimeout: 5000
 	});
 	owl.on('click', function (e) {
         owl.trigger('next.owl');
@@ -568,7 +578,7 @@ function loadCaroussel(_callback){
 		makeResponsiveCarousel();
 		_callback();
 	}
-	
+	owl.trigger('owl.play',6000);
 }
 
 function makeResponsiveCarousel(){
