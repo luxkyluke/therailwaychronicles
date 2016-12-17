@@ -1,15 +1,10 @@
 
-/*window.onload = function(){
-  console.log("VA LA HAUT");
-  window.scrollTop=0;
-}*/
 
 $(document).ready(function(){	
 	// chargement de la page index
-    
-    console.log("top");
     affArticle('index');
     $(document).scrollTop(0);
+    window.scrollTop=0;
 });
 
 $(document).scroll(function() {
