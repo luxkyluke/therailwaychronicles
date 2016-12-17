@@ -14,11 +14,12 @@ $(document).ready(function(){
 
 $(document).scroll(function() {
     var st = $(this).scrollTop();
-    $("#headerc").css({
-      "top": (-st/4),
-      "bottom": (st/4)
-    });
-
+    if($(window).width()>1024){
+      $("#headerc").css({
+        "top": (-st/4),
+        "bottom": (st/4)
+      });
+    }
     //Scroll menu degradé
     var header_h = $('header').height();
     var top_page = $("#page").offset().top;
@@ -32,12 +33,6 @@ $(document).scroll(function() {
       $("#footer .parallax").removeClass('hidden');
       $('#menu').addClass('dark');
     }
-
-    /*$(".article_bloc").each(function(){
-      if(isInViewport($(this))){
-        $(this).addClass("visible");
-      }
-    })*/
     
 });
 
@@ -46,7 +41,6 @@ $(window).resize(function() {
     replaceSachaDots();
   }
   else if(nav_current == "#nav_article"){
-    $(".se-pre-con").fadeIn(0);
     setTimeout(function(){
       makeResponsiveCarousel();
       $(".se-pre-con").fadeOut('slow');
@@ -54,7 +48,7 @@ $(window).resize(function() {
   }
 });
 
-function isInViewport(elem){
+/*function isInViewport(elem){
     console.log('IS IN VIEWPORT')
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -63,4 +57,4 @@ function isInViewport(elem){
     var elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
+}*/
