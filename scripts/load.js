@@ -1,6 +1,7 @@
  const TEMPLATE_PATH = "templates/"
  var indexIsLoad = false;
  var nav_current;
+ var runCarousel = false;
 
 ///!\ NE PAS CHANGER DE PLACE LES CONTINENTS EXISTANTS
 // 	NE PAS AJOUTER DE NOUVEAU CONTINENT
@@ -145,7 +146,7 @@ function affArticle(name){
 		case "index":
 			load_template_page("index", "The Railway Chronicales", function(){
 				setTimeout(function(){
-				    $(".se-pre-con").removeClass("visible");
+				    hideLoadingPage()
 				}, 1000);
 				indexIsLoad = true;
 				animMouse();
@@ -157,7 +158,7 @@ function affArticle(name){
 			load_template_page("sacha", "Le Voyage de Sacha", function(){				
 				replaceSachaDots();
 				setTimeout(function(){
-				    $(".se-pre-con").removeClass("visible");
+				    hideLoadingPage()
 				}, 1000);
 			});
 			break;
@@ -167,7 +168,7 @@ function affArticle(name){
 				experienceAnim();
 				clickCatExpAnim($("#cat_decouverte a li").first(), false);				
 				setTimeout(function(){
-				    $(".se-pre-con").removeClass("visible");
+				    hideLoadingPage()
 				}, 1000);
 			});
 			break;
@@ -177,7 +178,7 @@ function affArticle(name){
 				initMap(function(){
 					destinationsLoad(function(){
 						setTimeout(function(){
-						    $(".se-pre-con").removeClass("visible");
+						    hideLoadingPage()
 						}, 1000);
 					});
 				});
@@ -201,7 +202,7 @@ function affArticle(name){
 				});
 			}
 			setTimeout(function(){
-			    $(".se-pre-con").removeClass("visible");
+			    hideLoadingPage()
 			}, 500);
 			break;
 
@@ -221,7 +222,7 @@ function affArticle(name){
 				});
 			}
 			setTimeout(function(){
-			    $(".se-pre-con").removeClass("visible");
+			    hideLoadingPage()
 			}, 500);
 			break;
 
@@ -483,15 +484,27 @@ function markerClickEvent(id){
 	$("#pays_"+id + " a").click();
 }
 
+function animCarousel(){
+	if(!runCarousel)
+		return;
+	var owl = $('#carousel');
+	setTimeout(function(){
+		if(!runCarousel)
+			return;
+	    owl.trigger('next.owl');
+	    animCarousel();
+	}, 5000);
+}
+
 function loadCaroussel(_callback){
 	var owl = $('#carousel');
 	owl.owlCarousel({
 		items: 1,
 		autoPlay: true,
+		smartSpeed: 2000,
 		slideSpeed : 5000,
 		singleItem: true,
 		loop:true,
-		lazyLoad : true,
 		autoPlaySpeed: 5000,
     	autoPlayTimeout: 5000
 	});
@@ -501,18 +514,34 @@ function loadCaroussel(_callback){
 	});
 	$('.nextArrow').on('click', function (e) {
         owl.trigger('next.owl');
+        runCarousel =false;
 	    e.preventDefault();
 	});
+
 	$('.prevArrow').on('click', function (e) {
         owl.trigger('prev.owl');
+        runCarousel =false;
 	    e.preventDefault();
 	});
+
+	$(document).keyup(function(e){
+		if(e.keyCode === 39){
+			 $('.nextArrow').click();
+			 return;
+		}
+		if(e.keyCode === 37){
+			$('.prevArrow').click();
+		}
+	})
+
 	var cpt =0, i=0;
 	$("#carousel .item").each(function(){
 		$(this).imagesLoaded( function() {
 			cpt++;
 			if(cpt == i){
 				makeResponsiveCarousel();
+				runCarousel = true;
+				animCarousel();
 				_callback();
 			}
 		});
@@ -520,9 +549,10 @@ function loadCaroussel(_callback){
 	});
 	if(i == 0){
 		makeResponsiveCarousel();
+		runCarousel = true;
+		animCarousel();
 		_callback();
 	}
-	
 	owl.trigger('owl.play',6000);
 
 }
@@ -554,7 +584,25 @@ function animMouse(){
 
 function affLoadingPage(){
 	$(".se-pre-con").addClass('visible');
+	$('html, body').css({ 'overflow': 'hidden', 'height': '100%' });
 	$('#menu').removeClass('dark');
+}
+
+function hideLoadingPage(){
+	$(".se-pre-con").removeClass('visible');
+	$('html, body').removeAttr('style');
+}
+
+function setTitleHidden(){
+	$("#articletitle .title_logo").fadeOut('slow');
+	$("#articletitle p").fadeOut('slow');
+	$("#articletitle .mouse").fadeOut('slow');
+}
+
+function setTitleVisible(){
+	$("#articletitle .title_logo").fadeIn('slow');
+	$("#articletitle p").fadeIn('slow');
+	$("#articletitle .mouse").fadeIn('slow');
 }
 
 function loadArticle(page, title){
@@ -563,8 +611,11 @@ function loadArticle(page, title){
 		load_template_page(page, title, function(){
 			loadCaroussel(function(){
 				setTimeout(function(){
-				    $(".se-pre-con").removeClass("visible");
+				    hideLoadingPage()
 				}, 1000);	
+				$(".arrow").click(function(){
+					setTitleHidden();
+				});
 				nav_current='#nav_article';
 			});	
 			animMouse();		

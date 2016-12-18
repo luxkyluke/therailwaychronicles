@@ -233,8 +233,15 @@
 		transform: translateX(-15%);
 	}
 } 
+@media (max-width: 1050px){
+
+	#articletitle .mouse{
+		display: none;
+	}
+}
 
 @media (max-width: 1024px){
+
 	.conteneur_logo_desc li{
 		width: 19%;
 		margin: 0;
