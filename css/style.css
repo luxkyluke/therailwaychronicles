@@ -83,8 +83,12 @@ p{
 	z-index: 3;
 	right: 50%;
 	top: 80%;
-	display: block;
+	display: none;
 	cursor: pointer;
+}
+
+#home .mouse{
+	display: block;
 }
 
 .mouse #mouse{
