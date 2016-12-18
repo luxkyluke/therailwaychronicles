@@ -88,11 +88,11 @@ p{
 }
 
 .mouse #mouse{
-	width:40px;
+	width: 31px;;
 }
 
 .mouse #arrow{
-	width: 45px;
+	width: 35px;
 	-webkit-animation: moov_mouse 2s infinite forwards; /* Safari 4+ */
   	-moz-animation:    moov_mouse 2s infinite forwards; /* Fx 5+ */
   	-o-animation:      moov_mouse 2s infinite forwards; /* Opera 12+ */
@@ -124,13 +124,13 @@ p{
 }
 
 .mouse img{
-	right:50%;
 	transform:translateX(-50%);	
 	-webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     -ms-transition: all 200ms ease-out;
     -o-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
+	right:50%;
 }
 
 #header_ #header .title_logo {
@@ -542,7 +542,7 @@ nav #burger_menu #menu .menu__link.current{
     background: #d94f5c;
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
-    -webkit-transition: -webkit-transform 0.2s;
+    -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     height: 2px;
     transform-origin: 100% 50%;
@@ -744,13 +744,9 @@ nav #burger_menu #burger{
 	}
 
 
-.mouse{
-	display: block;
-
-	
-}
-
-	
+	.mouse{
+		display: block;
+	}
 }
 
 @media (max-width: 1050px){
@@ -768,14 +764,12 @@ nav #burger_menu #burger{
 	}
 
 	#menu .menu__link.current::after {
-		before:  : 0px;
+		before:  0px;
 		height:  3px;
 	}
 
 	nav #burger_menu #menu{
-		/* display: none; */
 		visibility: hidden;
-		/* display: none; */
 		transition: all 0.5s;
 		/* display: none; */
 		transform: translateY(-100%);
@@ -808,12 +802,6 @@ nav #burger_menu #burger{
 		margin-left: 2em;
 		/* right: 0; */;
 	}
-
-/* 	nav #burger_menu #menu li:nth-child(2){
-	margin: auto !important;
-    	margin-bottom: 0.4em !important;
-}
- */
 
 	nav #burger_menu #menu a:hover > li{
 		border-bottom: 2px solid #FFF;
@@ -949,6 +937,7 @@ nav #burger_menu #burger{
 }
 
 @media (max-width: 450px){
+
 	.menu__wrapper{
 		width: 90%;
 	}
@@ -967,7 +956,7 @@ nav #burger_menu #burger{
 
 	.title_logo{
 		font-size: 2.5em;
-		width: 95%;
+		width: 90%;
 	}
 
 	p{
@@ -1019,6 +1008,10 @@ nav #burger_menu #burger{
 @media (max-width: 350px){
 	nav #burger_menu #menu .menu__link{
 		font-size: 0.7em;
+	}
+	.title_logo{
+		width: 85%;
+		font-size: 2em;
 	}
 }
 
