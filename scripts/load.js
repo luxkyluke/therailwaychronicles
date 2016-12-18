@@ -50,11 +50,11 @@ var pays = [
 			$('#menu a').on('click', function(e) {
 				e.preventDefault();
 
-				$('#menu').removeClass('dark');
+				affLoadingPage();
+
 				var id = $(this).attr('id');
 				var tmp = id.split('_');
 				var page =tmp[1];
-				$(".se-pre-con").addClass('visible');
 
 				nav_current = "#"+id;
 				updateCurrent();
@@ -227,62 +227,22 @@ function affArticle(name){
 			break;
 
 		case "article":
-			load_template_page("article", "Title", function(){
-				loadCaroussel(function(){
-					setTimeout(function(){
-					    $(".se-pre-con").removeClass("visible");
-					}, 1000);	
-					nav_current='#nav_article';
-				});			
-			});
+			loadArticle();
 			break;
 		case "El_Chepe":
-			load_template_page("El_Chepe", "El Chepe - Mexique", function(){
-				loadCaroussel(function(){
-					setTimeout(function(){
-					    $(".se-pre-con").removeClass("visible");
-					}, 1000);
-					nav_current='#nav_article';
-				});
-			});
+			loadArticle();
 			break;
 		case "Blue_Train":
-			load_template_page("Blue_Train", "Blue Train - South Africa", function(){
-				loadCaroussel(function(){
-					setTimeout(function(){
-					    $(".se-pre-con").removeClass("visible");
-					}, 1000);
-					nav_current='#nav_article';
-				});
-			});
+			loadArticle();
 			break;
 		case "Hiram_Bingham":
-			load_template_page("Hiram_Bingham", "Hiram Bingham - Pérou", function(){
-				loadCaroussel(function(){
-					setTimeout(function(){
-					    $(".se-pre-con").removeClass("visible");
-					}, 1000);
-					nav_current='#nav_article';		
-				});
-			});
+			loadArticle();
 			break;
 		case "Petite_Ceinture":
-			load_template_page("Petite_Ceinture", "Petite Ceinture - France", function(){
-				loadCaroussel(function(){
-					$(".se-pre-con").removeClass("visible");
-				});
-				nav_current='#nav_article';
-			});
+			loadArticle();
 			break;
 		case "White_Pass":
-			load_template_page("White_Pass", "White Pass and Yukon Route - Alaska", function(){
-				loadCaroussel(function(){
-					setTimeout(function(){
-					    $(".se-pre-con").removeClass("visible");
-					}, 1000);
-					nav_current='#nav_article';
-				});
-			});
+			loadArticle();
 			break;
 		default :
 			console.log("ERROR, page non reconnue.");
@@ -591,4 +551,25 @@ function animMouse(){
 		e.preventDefault();
 		scrollToPage();
 	});
+}
+
+
+function affLoadingPage(){
+	$(".se-pre-con").addClass('visible');
+	$('#menu').removeClass('dark');
+}
+
+function loadArticle(){
+	affLoadingPage();
+	setTimeout(function(){
+		load_template_page("article", "Title", function(){
+			loadCaroussel(function(){
+				setTimeout(function(){
+				    $(".se-pre-con").removeClass("visible");
+				}, 1000);	
+				nav_current='#nav_article';
+			});	
+			animMouse();		
+		});
+	}, 400);
 }

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"max-height"
+			],
+			[
+				"tr",
+				"translateY()"
+			],
+			[
+				"scroll",
+				"scrollToPage"
+			],
+			[
 				"animation",
 				"animation-direction"
 			],
@@ -14,10 +26,6 @@
 			[
 				"wid",
 				"width"
-			],
-			[
-				"tr",
-				"translate()"
 			],
 			[
 				"inlie",
@@ -187,7 +195,15 @@
 			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 3814,
+				"buffer_size": 3774,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1001,
 				"line_ending": "Windows"
 			}
 		},
@@ -251,7 +267,7 @@
 			"file": "templates/Petite_Ceinture.html",
 			"settings":
 			{
-				"buffer_size": 5774,
+				"buffer_size": 5866,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,7 +275,7 @@
 			"file": "templates/experiences.html",
 			"settings":
 			{
-				"buffer_size": 13205,
+				"buffer_size": 13204,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,7 +283,7 @@
 			"file": "templates/header.html",
 			"settings":
 			{
-				"buffer_size": 161,
+				"buffer_size": 294,
 				"line_ending": "Windows"
 			}
 		},
@@ -275,7 +291,7 @@
 			"file": "templates/nav.html",
 			"settings":
 			{
-				"buffer_size": 1158,
+				"buffer_size": 875,
 				"line_ending": "Windows"
 			}
 		},
@@ -291,15 +307,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 15601,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/article.css",
-			"settings":
-			{
-				"buffer_size": 4732,
+				"buffer_size": 15622,
 				"line_ending": "Windows"
 			}
 		},
@@ -307,7 +315,15 @@
 			"file": "css/experiences.css",
 			"settings":
 			{
-				"buffer_size": 6175,
+				"buffer_size": 6354,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/article.css",
+			"settings":
+			{
+				"buffer_size": 4865,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +339,7 @@
 			"file": "scripts/load.js",
 			"settings":
 			{
-				"buffer_size": 14330,
+				"buffer_size": 13950,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,18 +347,8 @@
 			"file": "scripts/script.js",
 			"settings":
 			{
-				"buffer_size": 1532,
+				"buffer_size": 1329,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 69 files for \"url(\"img/background3.gif\")\"\n\n0 matches\n\nSearching 69 files for \"img/background3.gif\"\n\nD:\\wamp64\\www\\TripOnRail\\css\\style.css:\n   49:   /* background: url(../img/background3.gif); */\n\nD:\\wamp64\\www\\TripOnRail\\scripts\\script.js:\n   69:             $(\"#header\").css(\"background-image\", \"url(img/background3.gif\")\n\nD:\\wamp64\\www\\TripOnRail\\templates\\index.html:\n    2: 		<header id=\"home\" class=\"bg\"  data-src= \"img/background3.gif\" data-title=\"THE RAILWAY CHRONICLES\"></header>\n\n3 matches across 3 files\n\n\nSearching 70 files for \"scrollToPage\"\n\nD:\\wamp64\\www\\TripOnRail\\scripts\\load.js:\n  386: function scrollToPage(){\n  466: 		scrollToPage();\n  506: 		scrollToPage();\n\n3 matches in 1 file\n\n\nSearching 69 files for \"resetSelectedCountry\"\n\nD:\\wamp64\\www\\TripOnRail\\scripts\\load.js:\n  432: 		resetSelectedCountry();\n  482: 		resetSelectedCountry(this);\n  520: function resetSelectedCountry(selector){\n\n3 matches in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 941,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
 			}
 		}
 	],
@@ -391,6 +397,8 @@
 	],
 	"file_history":
 	[
+		"/D/wamp64/www/TripOnRail/scripts/contactform.js",
+		"/D/wamp64/www/TripOnRail/css/experiences.css",
 		"/D/wamp64/www/TripOnRail/templates/article.html",
 		"/D/wamp64/www/TripOnRail/img/logos/souris.svg",
 		"/D/wamp64/www/TripOnRail/img/logos/mouse.svg",
@@ -404,7 +412,6 @@
 		"/D/wamp64/www/TripOnRail/css/skeleton.css",
 		"/D/wamp64/www/TripOnRail/css/parallax.css",
 		"/D/wamp64/www/TripOnRail/scripts/script.js",
-		"/D/wamp64/www/TripOnRail/css/experiences.css",
 		"/D/wamp64/www/TripOnRail/scripts/imagesloaded.js",
 		"/D/wamp64/www/TripOnRail/scripts/modernizr.js",
 		"/D/wamp64/www/therailwaychronicles/scripts/load.js",
@@ -433,7 +440,6 @@
 		"/C/Users/Antoine/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/D/wamp64/www/TripOnRail/css/destination.css",
 		"/D/wamp64/www/TripOnRail/templates/destination.html",
-		"/D/wamp64/www/TripOnRail/scripts/contactform.js",
 		"/D/wamp64/www/TripOnRail/templates/footer.html",
 		"/D/wamp64/logs/access.log",
 		"/D/Documents/sitePerso/templates/pages/projects/art.html",
@@ -529,6 +535,8 @@
 		"height": 221.0,
 		"where_history":
 		[
+			"<project>",
+			"<current file>",
 			"",
 			"<project>",
 			"",
@@ -545,6 +553,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"consol",
+			"out",
+			"console.log",
+			"menuH",
+			"mouse",
+			"500ms",
+			"afric",
+			"window",
+			"50",
+			"UPD",
+			"updatecur",
+			"indexIsLoad",
+			"removeClass('current')",
+			"<<<<",
+			"after",
+			"200ms",
+			".fadeOut(\"slow\");",
+			"scrollToPage",
 			"#articletitle .mouse",
 			"#articletitle .mouse\n",
 			"#articletitle .mouse",
@@ -654,25 +680,7 @@
 			"levoyagedesacha",
 			"loadImgsBackGrounds",
 			";\n",
-			"		\n",
-			"headerc",
-			"top",
-			"exp",
-			"clickCatExpAnim",
-			"#menu",
-			"menu",
-			"click",
-			"affa",
-			"console",
-			"page",
-			"#b9b9b9",
-			"ParseInt",
-			"markerClickEvent",
-			";\n",
-			"destination",
-			"layoutStaggerAppear",
-			"id_region",
-			"continents"
+			"		\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -680,6 +688,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			".removeClass(\"visible\");",
+			"scrollToDestTitle",
 			".title_logo",
 			"insolite.png",
 			"makeResponsiveCarousel",
@@ -717,15 +727,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3814,
+						"buffer_size": 3774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246,
-								114
+								132,
+								132
 							]
 						],
 						"settings":
@@ -737,11 +747,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								922
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "img/logos/souris.svg",
 					"semi_transient": false,
 					"settings":
@@ -765,11 +804,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "img/logos/mouse.svg",
 					"semi_transient": false,
 					"settings":
@@ -794,11 +833,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "templates/sacha.html",
 					"semi_transient": false,
 					"settings":
@@ -824,11 +863,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "templates/destinations.html",
 					"semi_transient": false,
 					"settings":
@@ -840,8 +879,8 @@
 						"selection":
 						[
 							[
-								15710,
-								15710
+								2429,
+								2434
 							]
 						],
 						"settings":
@@ -850,14 +889,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1125.0,
+						"translation.y": 1010.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "templates/article.html",
 					"semi_transient": false,
 					"settings":
@@ -880,14 +919,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3061.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "templates/Blue_Train.html",
 					"semi_transient": false,
 					"settings":
@@ -909,14 +948,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2703.0,
+						"translation.y": 1449.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "templates/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -941,45 +980,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/Petite_Ceinture.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5774,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "templates/experiences.html",
+					"file": "templates/Petite_Ceinture.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13205,
+						"buffer_size": 5866,
 						"regions":
 						{
 						},
@@ -999,24 +1009,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "templates/header.html",
+					"file": "templates/experiences.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 161,
+						"buffer_size": 13204,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "templates/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
 							]
 						],
 						"settings":
@@ -1031,20 +1070,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "templates/nav.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1158,
+						"buffer_size": 875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								183,
-								183
+								210,
+								210
 							]
 						],
 						"settings":
@@ -1053,20 +1092,20 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 125.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "scripts/maps.js",
 					"semi_transient": false,
 					"settings":
@@ -1096,20 +1135,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15601,
+						"buffer_size": 15622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11979,
-								11912
+								2653,
+								2653
 							]
 						],
 						"settings":
@@ -1118,40 +1157,10 @@
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 15913.0,
+						"translation.y": 2704.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "css/article.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4732,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2480,
-								2480
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1160,15 +1169,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6175,
+						"buffer_size": 6354,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2060,
-								2060
+								308,
+								308
 							]
 						],
 						"settings":
@@ -1178,14 +1187,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2046.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 16,
+					"file": "css/article.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3036,
+								3036
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "css/destinations.css",
 					"semi_transient": false,
 					"settings":
@@ -1197,12 +1236,13 @@
 						"selection":
 						[
 							[
-								4708,
+								4643,
 								4643
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1211,24 +1251,24 @@
 						"translation.y": 4400.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "scripts/load.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14330,
+						"buffer_size": 13950,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4095,
-								4095
+								4112,
+								4112
 							]
 						],
 						"settings":
@@ -1236,28 +1276,28 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 4052.0,
+						"translation.x": 3.0,
+						"translation.y": 3994.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "scripts/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1532,
+						"buffer_size": 1329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								863,
-								863
+								143,
+								143
 							]
 						],
 						"settings":
@@ -1267,88 +1307,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 523.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 941,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										181,
-										200
-									],
-									[
-										312,
-										331
-									],
-									[
-										432,
-										451
-									],
-									[
-										624,
-										636
-									],
-									[
-										649,
-										661
-									],
-									[
-										674,
-										686
-									],
-									[
-										811,
-										831
-									],
-									[
-										844,
-										864
-									],
-									[
-										888,
-										908
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								852,
-								852
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 4,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ 	].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 639.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1382,7 +1344,7 @@
 		"cols":
 		[
 			0.0,
-			0.595063985375,
+			0.375076173065,
 			1.0
 		],
 		"rows":
@@ -1410,36 +1372,80 @@
 		"selected_items":
 		[
 			[
-				"load",
-				"scripts\\load.js"
-			],
-			[
-				"blu",
-				"templates\\Blue_Train.html"
+				"des",
+				"templates\\destinations.html"
 			],
 			[
 				"art",
 				"css\\article.css"
 			],
 			[
-				"he",
-				"templates\\header.html"
+				"scr",
+				"scripts\\script.js"
 			],
 			[
-				"sty",
-				"css\\style.css"
-			],
-			[
-				"loda",
-				"scripts\\load.js"
+				"nav",
+				"templates\\nav.html"
 			],
 			[
 				"exp",
 				"css\\experiences.css"
 			],
 			[
-				"des",
-				"css\\destinations.css"
+				"arl",
+				"css\\article.css"
+			],
+			[
+				"",
+				"css\\style.css"
+			],
+			[
+				"bleu",
+				"templates\\Blue_Train.html"
+			],
+			[
+				"load",
+				"scripts\\load.js"
+			],
+			[
+				"ex",
+				"css\\experiences.css"
+			],
+			[
+				"sr",
+				"scripts\\script.js"
+			],
+			[
+				"st",
+				"css\\style.css"
+			],
+			[
+				"sc",
+				"scripts\\script.js"
+			],
+			[
+				"na",
+				"templates\\nav.html"
+			],
+			[
+				"sty",
+				"css\\style.css"
+			],
+			[
+				"her",
+				"templates\\header.html"
+			],
+			[
+				"blu",
+				"templates\\Blue_Train.html"
+			],
+			[
+				"he",
+				"templates\\header.html"
+			],
+			[
+				"loda",
+				"scripts\\load.js"
 			],
 			[
 				"destin",
@@ -1462,20 +1468,8 @@
 				"css\\levoyagedesacha.css"
 			],
 			[
-				"na",
-				"templates\\nav.html"
-			],
-			[
 				"hea",
 				"templates\\header.html"
-			],
-			[
-				"sc",
-				"scripts\\script.js"
-			],
-			[
-				"",
-				"scripts\\load.js"
 			],
 			[
 				"styl",
@@ -1530,20 +1524,12 @@
 				"css\\font.css"
 			],
 			[
-				"scr",
-				"scripts\\script.js"
-			],
-			[
 				"inde",
 				"index.html"
 			],
 			[
 				"ske",
 				"css\\skeleton.css"
-			],
-			[
-				"st",
-				"css\\style.css"
 			],
 			[
 				"pa",
@@ -1568,10 +1554,6 @@
 			[
 				"index",
 				"templates\\index.html"
-			],
-			[
-				"nav",
-				"templates\\nav.html"
 			],
 			[
 				"articl",
@@ -1626,7 +1608,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
