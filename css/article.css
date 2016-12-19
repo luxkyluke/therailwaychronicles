@@ -167,8 +167,13 @@
 }
 
 #articletitle .mouse{
+	top:0;
 	transform: translateY(240%);
 	display: block;
+}
+
+#articletitle .mouse #arrow{
+	width: 40px;
 }
 
 #articletitle p{
@@ -178,8 +183,8 @@
 	text-align: center;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 1%;
 	font-weight: 600;
+	margin-top: 1%;
 }
 
 @media (max-width: 1200px){
@@ -203,21 +208,19 @@
 
 @media screen and (max-width: 1450px){
 	#articletitle .mouse {
-	transform: translateY(200%);
 
 	}
 }
 
 @media screen and (max-width: 1350px){
 	#articletitle .mouse {
-	transform: translateY(180%);
 		
 	}
 }
 
 @media screen and (max-width: 1200px){
 	#articletitle .mouse {
-		transform: translateY(150%);
+	top: -30%;
 	}
 }
 
@@ -235,6 +238,12 @@
 } 
 @media (max-width: 1050px){
 
+	#articletitle .mouse{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 1055px){
 	#articletitle .mouse{
 		display: none;
 	}
@@ -272,6 +281,12 @@
 	}
 }
 
+@media (max-width: 934px) and (min-width: 750px){
+	#articletitle p{
+		margin-top: 3%;
+	}
+}
+
 @media (max-width: 750px){
 	.food_img{
 		padding-top: 30%;
@@ -287,7 +302,7 @@
 	}
 
 	#articletitle p{
-		font-size: 	2em;
+	font-size: 2em;
 
 	}
 }
