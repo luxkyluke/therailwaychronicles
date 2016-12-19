@@ -496,7 +496,7 @@ function animCarousel(){
 			return;
 	    owl.trigger('next.owl');
 	    animCarousel();
-	}, 5000);
+	}, 5500);
 }
 
 function loadCaroussel(_callback){
@@ -504,7 +504,7 @@ function loadCaroussel(_callback){
 	owl.owlCarousel({
 		items: 1,
 		autoPlay: true,
-		smartSpeed: 2000,
+		smartSpeed: 2500,
 		slideSpeed : 5000,
 		singleItem: true,
 		loop:true,
@@ -557,11 +557,6 @@ function loadImgCarousel(_callback){
 		});
 		i++;
 	});
-		
-	
-
-
-
 	if(i == 0){
 		makeResponsiveCarousel();
 		runCarousel = true;
@@ -572,9 +567,14 @@ function loadImgCarousel(_callback){
 
 function makeResponsiveCarousel(){
   var imgH = $(".owl-stage-outer").height();
+  var windowH = $(window).height();
+  var middle = imgH/2;
+  if(windowH<imgH){
+  	middle = windowH/2;
+  }
   if(imgH == undefined)
     return ;
-  $("#articletitle").css("top", imgH/2);
+  $("#articletitle").css("top", middle);
   $(".overlay").css("height", imgH);
 }
 

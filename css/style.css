@@ -63,7 +63,6 @@ p{
 	height: 100%;
 	z-index: 90;
 	background: url(../img/loading.gif) center no-repeat #2a282b;
-	background-size: 100px 100px;
 	transform: translateY(-100%);
 	-webkit-transition: all 400ms ease-out;
     -moz-transition: all 400ms ease-out;
@@ -71,6 +70,7 @@ p{
     -o-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
 	overflow: hidden;
+	background-size: 100px 100px;
 }
 
 /***********	HOME	************/
@@ -254,21 +254,21 @@ p{
 
 #avatar1
 {
-	background-image: url(../img/alex.PNG);
+	background-image: url(../img/alex.jpg);
 	background-size: cover;
 	background-position: center center;
 }
 
 #avatar2
 {
-	background-image: url(../img/lisa.PNG);
+	background-image: url(../img/lisa.jpg);
 	background-size: cover;
 	background-position: center center;
 }
 
 #avatar3
 {
-	background-image: url(../img/antoine.PNG);
+	background-image: url(../img/antoine.jpg);
 	background-size: cover;
 	background-position: center center;
 }
