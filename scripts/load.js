@@ -547,23 +547,25 @@ function loadCaroussel(_callback){
 }
 
 function loadImgCarousel(_callback){
-	var cpt =0, i=0, stop = true;
-	$("#carousel .item").each(function(j){
+	var cpt =0, i=0;
+	$("#carousel .item").each(function(){
+		if(i>2){
+			i--;
+			return;
+		}
 		$(this).imagesLoaded( function() {
 			cpt++;
 			if(cpt == i){
-				stop = false;
 				makeResponsiveCarousel();
 				_callback();
 				runCarousel = true;
 				animCarousel();
 			}
 		});
-		if(i==2) {
-			while(stop);
-		}
 		i++;
 	});
+		
+	
 
 
 
