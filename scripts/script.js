@@ -11,7 +11,7 @@ $(document).ready(function(){
         indexIsLoad = true;
         hideLoadingPage();
       }
-    }10000);
+    },10000);
 });
 
 $(document).scroll(function() {
