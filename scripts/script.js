@@ -13,7 +13,7 @@ $(document).ready(function(){
       }
     },10000);
 });
-
+ 
 $(document).scroll(function() {
     var st = $(this).scrollTop();
     if($(window).width()>1024){
