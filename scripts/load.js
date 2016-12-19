@@ -158,7 +158,7 @@ function affArticle(name){
 			break;
 
 		case "sacha":
-			load_template_page("sacha", "Le Voyage de Sacha", function(){				
+			load_template_page("sacha", "Le Voyage de Sacha", function(){	
 				replaceSachaDots();
 				hideLoadingPage();
 			});
