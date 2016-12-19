@@ -6,6 +6,12 @@ $(document).ready(function(){
     affArticle('index');
     $(document).scrollTop(0);
     window.scrollTop=0;
+    setTimeout(function(){
+      if(!indexIsLoad){
+        indexIsLoad = true;
+        hideLoadingPage();
+      }
+    }10000);
 });
 
 $(document).scroll(function() {

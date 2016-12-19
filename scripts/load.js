@@ -81,7 +81,7 @@ var pays = [
 			}
 		});
 	}
-	
+	console.log("done ="+done);
  	$("footer").load(TEMPLATE_PATH+'footer.html', function(){
 		--done;
 		if(done == 0){
@@ -153,7 +153,6 @@ function affArticle(name){
 				hideLoadingPage();
 				indexIsLoad = true;
 				animMouse();
-				
 			});
 			break;
 
@@ -243,7 +242,7 @@ function affArticle(name){
 			console.log("ERROR, page non reconnue.");
 			break;
 	}
-	
+	$(document).scrollTop(0);
 	//alert(nav_current);
 }
 
