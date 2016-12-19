@@ -167,7 +167,7 @@
 }
 
 #articletitle .mouse{
-	top:0;
+	top:14;
 	transform: translateY(240%);
 	display: block;
 }
@@ -201,20 +201,25 @@
 	}
 }
 
-@media (max-width: 1600px){
-	#articletitle .mouse {
-	}
+
+@media (max-width: 1500px){
+
+
+#articletitle .mouse{
+	top: 50%;;;
 }
-
-@media screen and (max-width: 1450px){
-	#articletitle .mouse {
-
-	}
 }
 
 @media screen and (max-width: 1350px){
 	#articletitle .mouse {
-		
+		top: 0;
+	}
+}
+
+
+@media screen and (max-width: 1350px){
+	#articletitle .mouse{
+		top: 40;
 	}
 }
 

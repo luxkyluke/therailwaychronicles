@@ -115,7 +115,7 @@ var pays = [
 	var file = TEMPLATE_PATH+page+'.html';
     $('content').load(file, function(){	    	
 		basic_load(page, function(){
-		    window.history.pushState({"nav_id":"#nav_"+page, "pageTitle":title},"", "");
+		    window.history.pushState({"nav_id":"#nav_"+page, "page":page, "pageTitle":title},"", "");
 	    	loadImgsBackGrounds(page, function(){
 		    	_callback();
 		    	$(document).scrollTop(0);
@@ -129,7 +129,12 @@ var pays = [
 
 window.onpopstate = function(e){
     if(e.state){
-    	$(e.state.nav_id).click();
+    	if(!$(e.state.nav_id).length){
+    		affArticle(e.state.page);
+    	}
+    	else{
+	    	$(e.state.nav_id).click();
+	    }
         document.title = e.state.pageTitle;
     }
 };
