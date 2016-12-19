@@ -580,9 +580,11 @@ function makeResponsiveCarousel(){
 
 function replaceSachaDots(){
 	$(".chapter").each(function(){
-		var id = $(this).data('id');
-		var top = $(this).offset().top - $("#page").offset().top;
-		$("#dot"+id).css('top', top);
+		setTimeout(function(){
+			var id = $(this).data('id');
+			var top = $(this).offset().top - $("#page").offset().top;
+			$("#dot"+id).css('top', top);
+		}, 100);
 	});
 }
 
