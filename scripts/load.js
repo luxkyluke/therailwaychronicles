@@ -145,9 +145,7 @@ function affArticle(name){
 	switch(name){
 		case "index":
 			load_template_page("index", "The Railway Chronicales", function(){
-				setTimeout(function(){
-				    hideLoadingPage()
-				}, 1000);
+				hideLoadingPage();
 				indexIsLoad = true;
 				animMouse();
 				
@@ -157,9 +155,7 @@ function affArticle(name){
 		case "sacha":
 			load_template_page("sacha", "Le Voyage de Sacha", function(){				
 				replaceSachaDots();
-				setTimeout(function(){
-				    hideLoadingPage()
-				}, 1000);
+				hideLoadingPage();
 			});
 			break;
 
@@ -167,9 +163,7 @@ function affArticle(name){
 			load_template_page("experiences", "Experiences", function(){
 				experienceAnim();
 				clickCatExpAnim($("#cat_decouverte a li").first(), false);				
-				setTimeout(function(){
-				    hideLoadingPage()
-				}, 1000);
+				hideLoadingPage();
 			});
 			break;
 
@@ -177,9 +171,7 @@ function affArticle(name){
 			load_template_page("destinations", "Destinations", function(){
 				initMap(function(){
 					destinationsLoad(function(){
-						setTimeout(function(){
-						    hideLoadingPage()
-						}, 1000);
+						hideLoadingPage();
 					});
 				});
 				
@@ -201,9 +193,7 @@ function affArticle(name){
 					}, 2000, false);
 				});
 			}
-			setTimeout(function(){
-			    hideLoadingPage()
-			}, 500);
+			hideLoadingPage();
 			break;
 
 		case "contact":
@@ -221,9 +211,7 @@ function affArticle(name){
 					}, 2000, false);
 				});
 			}
-			setTimeout(function(){
-			    hideLoadingPage()
-			}, 500);
+			hideLoadingPage();
 			break;
 
 		case "article":
@@ -629,9 +617,7 @@ function loadArticle(page, title){
 	setTimeout(function(){
 		load_template_page(page, title, function(){
 			loadCaroussel(function(){
-				setTimeout(function(){
-				    hideLoadingPage()
-				}, 1000);	
+				hideLoadingPage();
 				$(".arrow").click(function(){
 					setTitleHidden();
 				});
