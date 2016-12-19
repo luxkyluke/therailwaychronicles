@@ -548,11 +548,11 @@ function loadCaroussel(_callback){
 	$("#carousel .item").each(function(){
 		$(this).imagesLoaded( function() {
 			cpt++;
-			if(cpt == i){
+			if(cpt == 2){
 				makeResponsiveCarousel();
+				_callback();
 				runCarousel = true;
 				animCarousel();
-				_callback();
 			}
 		});
 		i++;

@@ -2,6 +2,7 @@
 
 $(document).ready(function(){	
 	// chargement de la page index
+    affLoadingPage();
     affArticle('index');
     $(document).scrollTop(0);
     window.scrollTop=0;
