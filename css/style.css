@@ -977,6 +977,7 @@ nav #burger_menu #burger{
 	#home #mainlogo{
 		width: 70%;
 	}
+}
 
 @media (max-width: 450px){
 	#home #mainlogo{
@@ -1060,12 +1061,8 @@ nav #burger_menu #burger{
 	}
 }
 
-@media (max-height: 420px){
+@media screen and (max-height: 420px){
 	nav #burger_menu #menu li{
 		line-height: 1.1em;
 	}
-
-	/* nav #burger_menu #menu li:nth-child(2){
-		margin-bottom: 0.4em !important;
-	} */
 }

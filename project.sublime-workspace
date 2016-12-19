@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"visib",
+				"visible"
+			],
+			[
+				"windo",
+				"windowH"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
 				"runCarou",
 				"runCarousel"
 			],
@@ -14,10 +26,6 @@
 			[
 				"img",
 				"imgH"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"tr",
@@ -207,7 +215,7 @@
 			"file": "templates/article.html",
 			"settings":
 			{
-				"buffer_size": 6013,
+				"buffer_size": 5938,
 				"line_ending": "Windows"
 			}
 		},
@@ -223,7 +231,7 @@
 			"file": "templates/Hiram_Bingham.html",
 			"settings":
 			{
-				"buffer_size": 6537,
+				"buffer_size": 6472,
 				"line_ending": "Windows"
 			}
 		},
@@ -244,10 +252,20 @@
 			}
 		},
 		{
+			"contents": "Searching 75 files for \"img/food\"\n\nD:\\wamp64\\www\\TripOnRail\\templates\\article.html:\n   88: 					<div class=\"food_img  bg\" data-src= \"img/food/bluetrain6.jpg\"></div>\n   95: 					<div class=\"food_img  bg\" data-src = \"img/food/bluetrain.jpg\"></div>\n\nD:\\wamp64\\www\\TripOnRail\\templates\\Blue_Train.html:\n   88: 					<div class=\"food_img  bg\" data-src= \"img/food/bluetrain6.jpg\"></div>\n   95: 					<div class=\"food_img  bg\" data-src = \"img/food/bluetrain.jpg\"></div>\n\nD:\\wamp64\\www\\TripOnRail\\templates\\El_Chepe.html:\n   81: 					<div class=\"food_img  bg\" data-src= \"img/food/gorditas.jpg\"></div>\n\nD:\\wamp64\\www\\TripOnRail\\templates\\Hiram_Bingham.html:\n   88: 					<div class=\"food_img  bg\" data-src= \"img/food/hiramB.jpg\"></div>\n   95: 					<div class=\"food_img  bg\" data-src = \"img/food/pisco-sour.jpg\"></div>\n\nD:\\wamp64\\www\\TripOnRail\\templates\\Petite_Ceinture.html:\n   84: 					<div class=\"food_img  bg\" data-src= \"img/food/petiteceinture.jpg\"></div>\n   91: 					<div class=\"food_img  bg\" data-src = \"img/food/petiteceinture2.jpg\"></div>\n\nD:\\wamp64\\www\\TripOnRail\\templates\\White_Pass.html:\n   85: 					<div class=\"food_img  bg\" data-src= \"img/food/jack.jpg\"></div>\n\n10 matches across 6 files\n\n\nSearching 75 files for \"replaceSachaDots\"\n\nD:\\wamp64\\www\\TripOnRail\\scripts\\load.js:\n  162: 				replaceSachaDots();\n  581: function replaceSachaDots(){\n\nD:\\wamp64\\www\\TripOnRail\\scripts\\script.js:\n   42:     replaceSachaDots();\n\n3 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 1447,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
 			"file": "templates/sacha.html",
 			"settings":
 			{
-				"buffer_size": 6843,
+				"buffer_size": 6834,
 				"line_ending": "Windows"
 			}
 		},
@@ -255,7 +273,15 @@
 			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 3778,
+				"buffer_size": 3768,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/header.html",
+			"settings":
+			{
+				"buffer_size": 351,
 				"line_ending": "Windows"
 			}
 		},
@@ -279,7 +305,7 @@
 			"file": "templates/Blue_Train.html",
 			"settings":
 			{
-				"buffer_size": 6010,
+				"buffer_size": 5935,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,7 +321,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 15541,
+				"buffer_size": 16026,
 				"line_ending": "Windows"
 			}
 		},
@@ -311,7 +337,7 @@
 			"file": "css/article.css",
 			"settings":
 			{
-				"buffer_size": 5048,
+				"buffer_size": 5223,
 				"line_ending": "Windows"
 			}
 		},
@@ -327,7 +353,7 @@
 			"file": "scripts/load.js",
 			"settings":
 			{
-				"buffer_size": 14013,
+				"buffer_size": 14237,
 				"line_ending": "Windows"
 			}
 		},
@@ -335,7 +361,7 @@
 			"file": "scripts/script.js",
 			"settings":
 			{
-				"buffer_size": 1386,
+				"buffer_size": 1408,
 				"line_ending": "Windows"
 			}
 		}
@@ -387,6 +413,8 @@
 	],
 	"file_history":
 	[
+		"/D/wamp64/www/therailwaychronicles/scripts/load.js",
+		"/D/wamp64/www/TripOnRail/index.html",
 		"/D/wamp64/www/TripOnRail/scripts/owl.carousel.js",
 		"/D/wamp64/www/TripOnRail/css/style.css",
 		"/D/wamp64/www/TripOnRail/templates/Hiram_Bingham.html",
@@ -404,8 +432,6 @@
 		"/D/wamp64/www/TripOnRail/templates/sacha.html",
 		"/D/wamp64/www/TripOnRail/img/logos/mouse.svg",
 		"/D/wamp64/www/TripOnRail/img/logos/souris.svg",
-		"/D/wamp64/www/TripOnRail/index.html",
-		"/D/wamp64/www/therailwaychronicles/scripts/load.js",
 		"/D/wamp64/www/TripOnRail/scripts/json/map_style.json",
 		"/D/wamp64/www/TripOnRail/css/parallax.css",
 		"/D/wamp64/www/TripOnRail/css/contactform.css",
@@ -544,6 +570,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"replaceSachaDots",
+			"img/food",
+			"voyage_de_sacha.jpg",
+			"affArticle",
+			"window",
+			".mouse",
+			"setTime",
+			".addClass('visible');",
+			"$(\".se-pre-con\").addClass('visible');",
+			"imagesLoaded",
 			"$(\".se-pre-con\").removeClass(\"visible\");",
 			"$(\".se-pre-con\")",
 			"$('.se-pre-con')",
@@ -661,17 +697,7 @@
 			"link",
 			"current",
 			"selected",
-			"#bmenu",
-			"Bmenu",
-			"true",
-			"bg",
-			"item",
-			"3000px",
-			" items:6,",
-			"1080px",
-			"1920px",
-			"loadImgsBackGrounds",
-			"loadBG"
+			"#bmenu"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -710,7 +736,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -719,15 +745,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6013,
+						"buffer_size": 5938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5941,
-								5941
+								699,
+								699
 							]
 						],
 						"settings":
@@ -737,10 +763,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2992.0,
+						"translation.y": 264.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -756,8 +782,8 @@
 						"selection":
 						[
 							[
-								4753,
-								4775
+								4479,
+								4479
 							]
 						],
 						"settings":
@@ -766,10 +792,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2331.0,
+						"translation.y": 2134.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -778,15 +804,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6537,
+						"buffer_size": 6472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6225,
-								6225
+								707,
+								707
 							]
 						],
 						"settings":
@@ -795,10 +821,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3068.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -814,95 +840,8 @@
 						"selection":
 						[
 							[
-								5879,
-								5879
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4486.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "templates/White_Pass.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5444,
-								5444
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2782.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/sacha.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								237,
-								237
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "templates/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								320,
-								320
+								505,
+								505
 							]
 						],
 						"settings":
@@ -918,7 +857,217 @@
 					"type": "text"
 				},
 				{
+					"buffer": 4,
+					"file": "templates/White_Pass.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1447,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										133,
+										141
+									],
+									[
+										215,
+										223
+									],
+									[
+										348,
+										356
+									],
+									[
+										430,
+										438
+									],
+									[
+										561,
+										569
+									],
+									[
+										696,
+										704
+									],
+									[
+										774,
+										782
+									],
+									[
+										913,
+										921
+									],
+									[
+										999,
+										1007
+									],
+									[
+										1138,
+										1146
+									],
+									[
+										1289,
+										1305
+									],
+									[
+										1325,
+										1341
+									],
+									[
+										1401,
+										1417
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1297,
+								1297
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/sacha.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5708,
+								5708
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2155.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
 					"buffer": 7,
+					"file": "templates/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2603,
+								2610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3938.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -930,37 +1079,8 @@
 						"selection":
 						[
 							[
-								744,
-								744
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 13.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/nav.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 875,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
+								395,
+								395
 							]
 						],
 						"settings":
@@ -976,32 +1096,63 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "templates/Blue_Train.html",
+					"buffer": 10,
+					"file": "templates/nav.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6010,
+						"buffer_size": 875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5938,
-								5938
+								591,
+								606
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3206.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "templates/Blue_Train.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5935,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1011,7 +1162,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "scripts/maps.js",
 					"semi_transient": false,
 					"settings":
@@ -1037,39 +1188,40 @@
 						"translation.y": 815.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 13,
 					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15541,
+						"buffer_size": 16026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								551,
-								551
+								4449,
+								4449
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 721.0,
+						"translation.y": 5506.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
 					"file": "css/experiences.css",
 					"semi_transient": false,
 					"settings":
@@ -1096,24 +1248,24 @@
 						"translation.y": 408.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 15,
 					"file": "css/article.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5048,
+						"buffer_size": 5223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3470,
-								3470
+								3132,
+								3132
 							]
 						],
 						"settings":
@@ -1123,14 +1275,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4724.0,
+						"translation.y": 5234.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 16,
 					"file": "css/destinations.css",
 					"semi_transient": false,
 					"settings":
@@ -1157,24 +1309,24 @@
 						"translation.y": 4400.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
 					"file": "scripts/load.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14013,
+						"buffer_size": 14237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11377,
-								11377
+								3375,
+								3375
 							]
 						],
 						"settings":
@@ -1183,27 +1335,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 10264.0,
+						"translation.y": 3131.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
 					"file": "scripts/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1386,
+						"buffer_size": 1408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								425,
-								425
+								71,
+								71
 							]
 						],
 						"settings":
@@ -1217,7 +1369,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1251,7 +1403,7 @@
 		"cols":
 		[
 			0.0,
-			0.346435100548,
+			0.32449725777,
 			1.0
 		],
 		"rows":
@@ -1279,32 +1431,60 @@
 		"selected_items":
 		[
 			[
+				"loa",
+				"scripts\\load.js"
+			],
+			[
+				"",
+				"css\\style.css"
+			],
+			[
+				"inde",
+				"templates\\index.html"
+			],
+			[
+				"wh",
+				"templates\\White_Pass.html"
+			],
+			[
+				"cein",
+				"templates\\Petite_Ceinture.html"
+			],
+			[
+				"hir",
+				"templates\\Hiram_Bingham.html"
+			],
+			[
 				"el",
 				"templates\\El_Chepe.html"
 			],
 			[
-				"load",
-				"scripts\\load.js"
+				"blue",
+				"templates\\Blue_Train.html"
 			],
 			[
 				"art",
 				"css\\article.css"
 			],
 			[
-				"inde",
-				"index.html"
+				"sac",
+				"templates\\sacha.html"
+			],
+			[
+				"hea",
+				"templates\\header.html"
 			],
 			[
 				"sty",
 				"css\\style.css"
 			],
 			[
-				"ar",
-				"css\\article.css"
+				"load",
+				"scripts\\load.js"
 			],
 			[
-				"blue",
-				"templates\\Blue_Train.html"
+				"ar",
+				"css\\article.css"
 			],
 			[
 				"st",
@@ -1327,10 +1507,6 @@
 				"css\\contactform.css"
 			],
 			[
-				"loa",
-				"scripts\\load.js"
-			],
-			[
 				"pa",
 				"css\\parallax.css"
 			],
@@ -1349,10 +1525,6 @@
 			[
 				"arl",
 				"css\\article.css"
-			],
-			[
-				"",
-				"css\\style.css"
 			],
 			[
 				"bleu",
@@ -1405,10 +1577,6 @@
 			[
 				"le",
 				"css\\levoyagedesacha.css"
-			],
-			[
-				"hea",
-				"templates\\header.html"
 			],
 			[
 				"styl",
