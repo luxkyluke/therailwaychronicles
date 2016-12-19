@@ -159,7 +159,9 @@ function affArticle(name){
 
 		case "sacha":
 			load_template_page("sacha", "Le Voyage de Sacha", function(){	
-				replaceSachaDots();
+				setTimeout(function(){
+					replaceSachaDots();
+				},100);
 				hideLoadingPage();
 			});
 			break;
@@ -580,11 +582,9 @@ function makeResponsiveCarousel(){
 
 function replaceSachaDots(){
 	$(".chapter").each(function(){
-		setTimeout(function(){
-			var id = $(this).data('id');
-			var top = $(this).offset().top - $("#page").offset().top;
-			$("#dot"+id).css('top', top);
-		}, 100);
+		var id = $(this).data('id');
+		var top = $(this).offset().top - $("#page").offset().top;
+		$("#dot"+id).css('top', top);
 	});
 }
 
