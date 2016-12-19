@@ -270,21 +270,31 @@ function loadBG(_callback){
 	var cpt =0, i=0;
 	$(".bg").each(function(){
 		var src = $(this).data('src');
-		$(this).imagesLoaded( {background: true}, function() {
-			cpt++;
-			if(cpt == i){
-				_callback();
-				return;
-			}	
-		});	
 		if (src != undefined){
 			if($(this).hasClass('article_header') || $(this).attr('id')=="home"){
 				$('#header').css('background-image', 'url('+src+')');
+				$('#header').imagesLoaded( {background: true}, function() {
+					cpt++;
+					if(cpt == i){
+						_callback();
+						return;
+					}	
+				});	
 			}
-			else
+			else{
 				$(this).css('background-image', 'url('+src+')');
+				$(this).imagesLoaded( {background: true}, function() {
+					cpt++;
+					if(cpt == i){
+						_callback();
+						return;
+					}	
+				});	
+			}
 			i++;
 		}
+		else
+			console.log("Error ! Impossible de charger background image ! URL inconnu");
 	});
 	if(i==0)
 		_callback();
